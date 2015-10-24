@@ -18,7 +18,7 @@ The following are links to the official D Programming Language:
 
 * [Official Site (dlang.org)] (http://dlang.org/)
 * [Official Specification] (http://dlang.org/dlangspec.pdf)
-* [Wiki] (http://wiki.dlang.org/)
+* [D Wiki] (http://wiki.dlang.org/)
 
 ## Organization
 
