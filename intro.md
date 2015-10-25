@@ -4,7 +4,7 @@ title: Guide to the D Programming Language
 chapter: Introduction
 excerpt: Introduction to the D Programming Language
 group: DLang
-tags: [dlang, dlangref]
+tags: [dlang, dlangref, draft]
 ---
 
 D programming language is a general purpose [systems programming language] which belongs to the [C-family languages].
