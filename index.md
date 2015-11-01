@@ -25,11 +25,11 @@ The following are links to the official D Programming Language:
 The following is the list of major topics for this guide.
 
 <ol>
-{% for p in site.dlang_list %}
-    {% if p[1] == 'divider' %}
-        <hr class="thin compact darker" />
+{% for item in site.data.dguide %}
+    {% if item.href == 'divider' %}
+        <hr class="thin compact darker">
     {% else %}
-        <li class="padding_left_5"><a class="no_underline" href="{{ p[1]  }}">{{ p[0] }}</a></li>
+        <li class="padding_left_5"><a class="no_underline" href="{{ item.href }}">{{ item.chapter }}</a></li>
     {% endif %}
 {% endfor %}
 </ol>
