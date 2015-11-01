@@ -26,7 +26,7 @@ A line comment starts with double slash (`//`) characters. Any characters on the
 It is used as an alternative to the block comment when commenting or remarking with only a single line.
 Programmers sometimes prefer to type less for single line comments.
 
-~~~d
+~~~
 // This is a line comment
 ~~~
 
@@ -38,7 +38,7 @@ Anything between the begin and end comment terminators are ignored.
 It is often used as a paragraph-like comment or remark.
 It can be used as an alternative to the _line comment_.
 
-~~~d
+~~~
 /* This is a block comment in one line */
 
 /*
@@ -54,7 +54,7 @@ A _nesting block comment_ begins with the slash plus (`/+`) characters and termi
 Anything between the begin and end comment terminators are also ignored as in _block comments_.
 It is also used as a pararaph-like comment or remark or as an alternative to the _line comment_.
 
-~~~d
+~~~
 /+ This is a block comment in one line +/
 
 /+
@@ -67,14 +67,14 @@ Meaning, it can appear inside another _nesting block comment_.
 It does not matter how many levels of nesting there is as long as the beginning and ending comment terminators match.
 The following example using the _block comment_ will produce an error but not when a _nesting block comment_ is used.
 
-{% highlight d linenos %}
-/+
-a
-/+ block comment +/
-b
-+/
-c
-{% endhighlight %}
+~~~
+/+                                  <------+
+/+                                  <---+  |
+/+ nesting block comment +/             |  |
++/                                  <---+  |
+/+ nesting block comment +/                |
++/                                  <------+
+~~~
 
 {% comment %}
 Here is another use for this comment style.
