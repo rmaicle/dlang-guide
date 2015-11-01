@@ -57,7 +57,10 @@ The most recent version is [Unicode 8.0](http://blog.unicode.org/2015/06/announc
 Unicode defines two mapping methods: the _Unicode Transformation Format_ (UTF) encodings, and the _Universal Character Set_ (UCS) encodings.
 There are other UTF encodings other than those mentioned here.
 
-## Token Separators
+## Separators and Terminators
+
+Scanning the source text 
+Token separators for simplicity are 
 
 | Name              | Unicode         | ASCII           | Char | Remark |
 |-------------------|:---------------:|:---------------:|:----:|--------|

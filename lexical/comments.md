@@ -76,6 +76,7 @@ b
 c
 {% endhighlight %}
 
+{% comment %}
 Here is another use for this comment style.
 In this example, the compiler will process the line numbers 1, 3 and 4 and will ignore line number 2.
 
@@ -121,3 +122,4 @@ Because it allows reusing C code without modifications and because the _nesting 
 {% endcomment %}
 
 The simple reason of being able to compile C source files without modification.
+{% endcomment %}

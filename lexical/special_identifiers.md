@@ -8,15 +8,15 @@ group: DLang
 tags: [dlang, dlangref, draft]
 ---
 
-Special identifiers are identifiers that are automatically defined by the compiler.
-These identifiers are not reserved identifiers and thus compiler implementers may redefine them for a compelling reason.
+Special identifiers are identifiers automatically defined by the compiler.
+They are not reserved identifiers and thus compiler implementers may choose to define and use them differently.
 These identifiers are globally defined and readily available for programmers to use.
 
-| Symbol      | Description |
-|-------------|-------------|
-| `string`    | alias to `immutable(char)[]` |
-| `wstring`   | alias to `immutable(wchar)[]` |
-| `dstring`   | alias to `immutable(dchar)[]` |
-| &nbsp;      | |
-| `size_t`    | |
-| `ptrdiff_t` | |
+| Symbol    | Description |
+|-----------|-------------|
+| string    | alias to immutable(char)[&nbsp;] |
+| wstring   | alias to immutable(wchar)[&nbsp;] |
+| dstring   | alias to immutable(dchar)[&nbsp;] |
+| &nbsp;    | |
+| size_t    | |
+| ptrdiff_t | |

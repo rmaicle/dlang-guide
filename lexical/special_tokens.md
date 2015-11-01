@@ -9,7 +9,7 @@ tags: [dlang, dlangref, draft]
 ---
 
 Special tokens are language-defined read-only identifiers that are expanded into other tokens.
-Like reserved identifiers they cannot be redefined in any source file.
+Like [_Reserved Identifiers_](reserved_identifiers.html) they cannot be redefined in any source file.
 Attempt to assign values to them will result in an error.
 
 {% comment %}
