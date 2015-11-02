@@ -2,7 +2,7 @@
 layout: reference_dlang
 title: Guide to the D Programming Language
 chapter: Lexical
-section: Identifiers
+section: ASCII Characters
 excerpt:
 group: DLang
 tags: [dlang, dlangref, draft]
