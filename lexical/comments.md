@@ -5,7 +5,7 @@ chapter: Lexical
 section: Comments
 excerpt: Language comment-styles
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 A comment is a kind of program annotation. It is primarily used to add _comments_ or _remarks_ on a piece of code.

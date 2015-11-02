@@ -4,7 +4,7 @@ title: Guide to the D Programming Language
 chapter: Background
 excerpt: Background on the D Programming Language
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 redirect_from: /dlang-guide/intro.html
 ---
 

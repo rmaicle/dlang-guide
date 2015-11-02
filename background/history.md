@@ -5,7 +5,7 @@ chapter: Background
 section: A Very Short History
 excerpt: Introduction to the D Programming Language
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 [Walter Bright] started working on a new programming language back in the 1990s.

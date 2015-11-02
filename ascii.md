@@ -5,7 +5,7 @@ chapter: Lexical
 section: ASCII Characters
 excerpt:
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 ###### ASCII control code chart

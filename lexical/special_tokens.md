@@ -5,7 +5,7 @@ chapter: Lexical
 section: Special Tokens
 excerpt: Language special symbols
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 Special tokens are language-defined read-only identifiers that are expanded into other tokens.

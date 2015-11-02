@@ -5,7 +5,7 @@ chapter: Background
 section: Notable Features
 excerpt: Introduction to the D Programming Language
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 D has some noteable features.

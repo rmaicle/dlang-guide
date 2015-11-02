@@ -5,7 +5,7 @@ chapter: Lexical
 section: Reserved Identifiers
 excerpt: Language reserved words
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 The language defines some identifiers as reserved identifiers that are globally defined.

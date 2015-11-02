@@ -4,7 +4,7 @@ title: Guide to the D Programming Language
 chapter: Index
 excerpt:
 group: DLang
-tags: [dlang, dlangref]
+tags: [dlang, dguide, draft]
 ---
 
 This is my experimental Guide to the [D Programming Language](http://dlang.org/).

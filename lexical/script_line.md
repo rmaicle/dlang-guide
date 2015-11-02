@@ -5,7 +5,7 @@ chapter: Lexical
 section: Script Line
 excerpt: Script execution
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 The first source text character of an ASCII text file is the character at offset 0x00.

@@ -4,7 +4,7 @@ title: Guide to the D Programming Language
 chapter: Compiler
 excerpt: Reference compiler Digital Mars D
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 The D programming language reference compiler is __Digital Mars D__ commonly known by its acronym __DMD__.

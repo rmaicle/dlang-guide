@@ -5,7 +5,7 @@ chapter: Lexical
 section: Identifiers
 excerpt:
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 Language _identifiers_ are case sensitive, can be arbitrarily long but may not contain whitespace characters.
