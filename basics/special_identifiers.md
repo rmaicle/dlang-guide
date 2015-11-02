@@ -5,7 +5,7 @@ chapter: Lexical
 section: Special Identifiers
 excerpt: 
 group: DLang
-tags: [dlang, dlangref, draft]
+tags: [dlang, dguide, draft]
 ---
 
 Special identifiers are identifiers automatically defined by the compiler.
