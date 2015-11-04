@@ -79,7 +79,7 @@ Deprecated command-line options will be removed in future releases.
 
 | Option | Description |
 |--------|-------------|
-| `-noboundscheck` | no array bounds checking (deprecated, use -_boundscheck_=_off_) |
+| -__noboundscheck__ | no array bounds checking (deprecated, use -_boundscheck_=_off_) |
 
 ##### Common Options
 
