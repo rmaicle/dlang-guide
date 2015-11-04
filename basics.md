@@ -11,7 +11,7 @@ tags: [dlang, dguide, draft]
 This chapter introduces the reader to the basics of compilations processes and the language lexical tokens.
 {% endcomment %}
 
-Compilation [^compiler] is the process converting or translating a program text file [^sourcecode] into a binary file which is fed to a linker [^linker].
+Compilation [^compiler] is the process converting or translating a program text file [^sourcecode] into a binary file which is fed to a linker. [^linker]
 Program compilation is a multi-step process or sometimes called translaton phases.
 These translation phases are big topics on their own and are subjects in active research.
 
