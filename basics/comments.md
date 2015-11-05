@@ -1,7 +1,7 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Lexical
+chapter: Basics
 section: Comments
 excerpt: Language comment-styles
 group: DLang

@@ -1,7 +1,7 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Lexical
+chapter: Basics
 section: Special Identifiers
 excerpt: 
 group: DLang
