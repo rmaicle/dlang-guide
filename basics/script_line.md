@@ -39,7 +39,7 @@ The command to do that is `chmod` and is shown below how to accomplish that.
     $ chmod u+x hello.d
     
 The arguments `u+x` tells `chmod` to make the owner of the file to have execute permission on `hello.d`.
-Once done, typing the following in the command-line will run the file as if it has been compiled.
+Once done, the following command-line will run (execute) the file as if it is an executable binary file.
 
     $ ./hello.d
     Hello, world!
