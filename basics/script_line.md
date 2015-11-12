@@ -46,7 +46,7 @@ Once done, the following command-line will run (execute) the file as if it is an
 
 Follow this link to learn more about [compiler command-line options](/dlang-guide/compiler.html).
 
-##### Note on Compilation
+###### Note on Compilation
 
 The above file (`hello.d`) when fed into the compiler does not produce an object or any intermediate file.
 Everything happens in memory.

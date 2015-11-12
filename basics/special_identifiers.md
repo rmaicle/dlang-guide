@@ -14,9 +14,11 @@ These identifiers are globally defined and readily available for programmers to 
 
 | Symbol    | Description |
 |-----------|-------------|
-| string    | alias to immutable(char)[&nbsp;] |
-| wstring   | alias to immutable(wchar)[&nbsp;] |
-| dstring   | alias to immutable(dchar)[&nbsp;] |
+| string    | alias to an array of immutable (8-bit) character. |
+| wstring   | alias to an array of immutable wide (16-bit) character. |
+| dstring   | alias to an array of immutable double (32-bit) character. |
 | &nbsp;    | |
-| size_t    | |
-| ptrdiff_t | |
+| size_t    | alias to one of the unsigned integral basic types, and represents a type that is large enough to represent an offset into all addressable memory. |
+| ptrdiff_t | alias to the signed type the same size as `size_t`. |
+
+For additional information on `size_t` and `ptrdiff_t` see the section [_Special Types_](/dlang-guide/types/basic/special.html).

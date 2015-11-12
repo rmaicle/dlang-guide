@@ -26,9 +26,9 @@ A line comment starts with double slash (`//`) characters. Any characters on the
 It is used as an alternative to the block comment when commenting or remarking with only a single line.
 Programmers sometimes prefer to type less for single line comments.
 
-~~~
+{% highlight d %}
 // This is a line comment
-~~~
+{% endhighlight %}
 
 ##### Block Comment
 
@@ -38,13 +38,13 @@ Anything between the begin and end comment terminators are ignored.
 It is often used as a paragraph-like comment or remark.
 It can be used as an alternative to the _line comment_.
 
-~~~
+{% highlight d %}
 /* This is a block comment in one line */
 
 /*
  * This is a block comment spanning three (3) lines
  */
-~~~
+{% endhighlight %}
 
 ##### Nesting Block Comment
 
@@ -54,27 +54,33 @@ A _nesting block comment_ begins with the slash plus (`/+`) characters and termi
 Anything between the begin and end comment terminators are also ignored as in _block comments_.
 It is also used as a pararaph-like comment or remark or as an alternative to the _line comment_.
 
-~~~
+{% highlight d %}
 /+ This is a block comment in one line +/
 
 /+
  + This is a block comment spanning three (3) lines
  +/
-~~~
+{% endhighlight %}
 
 Its difference from the _block comment_ is that it nests.
 Meaning, it can appear inside another _nesting block comment_.
 It does not matter how many levels of nesting there is as long as the beginning and ending comment terminators match.
 The following example using the _block comment_ will produce an error but not when a _nesting block comment_ is used.
 
-~~~
-/+                                  <------+
-/+                                  <---+  |
-/+ nesting block comment +/             |  |
-+/                                  <---+  |
-/+ nesting block comment +/                |
-+/                                  <------+
-~~~
+{% highlight d linenos %}
+/+
+/+
+/+ nesting block comment +/
++/
+/+ nesting block comment +/
++/
+{% endhighlight %}
+
+Lines 1 and 6 is the outer block.
+Lines 2 and 4 is the inner block.
+Line 3 is another inner block within lines 2 and 4.
+Line 5 is another inner block within lines 1 and 6.
+
 
 {% comment %}
 Here is another use for this comment style.

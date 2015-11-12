@@ -10,7 +10,7 @@ tags: [dlang, dguide, draft]
 
 Language _identifiers_ are case sensitive, can be arbitrarily long but may not contain whitespace characters.
 Identifiers can only start with an underscore, ASCII alphabet or a universal alphabet [^unialpha].
-After the first character, an identifier can have any number or combinations of the characters mentioned above including digits.
+After the first character, an identifier can have any number and combinations of the characters mentioned above including digits.
 
 | Name          | Unicode         | ASCII              | Char   | Remark |
 |---------------|-----------------|--------------------|:------:|--------|
@@ -20,21 +20,29 @@ After the first character, an identifier can have any number or combinations of 
 | ASCI Digit    | U+0030 - U+0039 | 48 0x30 - 57 0x39  | 0 - 9  | Digit 0 to 9 |
 
 Identifiers starting with two underscores (&#95;&#95;) are reserved.
+You may not encounter an error when using an identifier with two (2) underscore prefixes but it is not guaranteed because the language could define the same identifier and will break your code in the future.
 
-###### Valid Identifiers
+###### Language Identifiers
 
-{% highlight d linenos %}
+{% highlight d %}
 import              // module import keyword
 string              // special identifier
 __FILE__            // special token
 __LINE__            // special token
-test_20151101       // user-defined identifier
-_20151101           // user-deined identifier
+{% endhighlight %}
+
+###### Valid User-Defined Identifiers
+
+{% highlight d %}
+test__              // ends with double underscores
+__test__            // not advised
+test_20151101       // starts with an alphabet
+_20151101           // starts with an underscore
 {% endhighlight %}
 
 ###### Invalid Identifiers
 
-{% highlight d linenos %}
+{% highlight d %}
 20151101            // cannot start with a digit
 7eleven             // cannot start with a digit
 $sign               // cannot start and use '$' character

@@ -9,7 +9,7 @@ tags: [dlang, dguide, draft]
 ---
 
 Input source files are text files passed to and read by the compiler.
-D supports the [ASCII] and [Unicode] text file formats and understands any Unicode character.
+D supports the [_ASCII_] and [_Unicode_] text file formats and understands any Unicode character.
 
 An ASCII text file is read starting with the first character in the file but not so with an Unicode text files.
 Unicode text files have different _character encodings_ [^charencode] and deals with different machine endianness [^endianness].
@@ -28,15 +28,15 @@ The compiler reads the BOM and converts the contents of the file to Unicode char
 | UTF-32LE | FF FE 00 00 |
 
 ###### ASCII
-
-ASCII or American Standard Code for Information Interchange is a character-encoding scheme which was developed from telegraphic codes promoted by Bell data services.
+The American Standard Code for Information Interchange (ASCII) is a character-encoding scheme which was developed from telegraphic codes promoted by Bell data services.
 The first edition of the ASCII standard was published in 1963 and revisions went on until 1986.[^ascii_pub]
 The ASCII character set was later incorporated into the Unicode character set without changing their codes to allow backwards compatibility. [^ascii_unicode]
 
-
-
-[ASCII]: (https://en.wikipedia.org/wiki/ASCII)
-[Unicode]: (https://en.wikipedia.org/wiki/Unicode)
+###### Unicode
+Unicode is an industry standard for text encoding for the world's writing system.
+The most recent version is [Unicode 8.0](http://blog.unicode.org/2015/06/announcing-unicode-standard-version-80.html) as of November 2015.
+Unicode defines two mapping methods: the _Unicode Transformation Format_ (UTF) encodings, and the _Universal Character Set_ (UCS) encodings.
+There are other UTF encodings other than those mentioned here.
 
 [^charencode]: Character encodings are a way to unify different character sets of the world's writing systems to facilitate the interchange of digital text.
 [^endianness]: Machine endianness refers to the way a computer processor stores data. Technically, it is the way a computer processor stores the most significant _bits_. If the most significant bits are stored first then this is called the _Big-Endian_ (BE) and the other way would be _Little-Endian_ (LE). For more information go to [https://en.wikipedia.org/wiki/Endianness](https://en.wikipedia.org/wiki/Endianness).
@@ -44,14 +44,10 @@ The ASCII character set was later incorporated into the Unicode character set wi
 [^ascii_pub]: [Wikipedia: ASCII, Publication](https://en.wikipedia.org/wiki/ASCII#Publication)
 [^ascii_unicode]: [Wikipedia: ASCII, Unicode](https://en.wikipedia.org/wiki/ASCII#Unicode)
 
-###### Unicode
+[_ASCII_]: https://en.wikipedia.org/wiki/ASCII
+[_Unicode_]: https://en.wikipedia.org/wiki/Unicode
 
-[_Unicode_](http://unicode.org/) is an industry standard for text encoding for the world's writing system.
-The most recent version is [Unicode 8.0](http://blog.unicode.org/2015/06/announcing-unicode-standard-version-80.html) as of November 2015.
-Unicode defines two mapping methods: the _Unicode Transformation Format_ (UTF) encodings, and the _Universal Character Set_ (UCS) encodings.
-There are other UTF encodings other than those mentioned here.
-
-## Separators and Terminators
+##### Separators and Terminators
 
 Scanning the source text 
 Token separators for simplicity are 
@@ -71,7 +67,7 @@ Token separators for simplicity are
 |                   | U+000C          | 12 0x0C         |  \\f    | New Page Form Feed (NP, FF) |
 |                   | U+0020          | 32 0x20         | (space) | Space |
 
-###### Backslash Line Splicing
+##### Backslash Line Splicing
 
 Backslash line splicing is used in programming languages like C++ to join two or more lines.
 Line splicing treats the concerned lines as if they are a single line.
