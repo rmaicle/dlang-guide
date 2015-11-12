@@ -11,21 +11,19 @@ tags: [dlang, dguide, draft]
 Input source files are text files passed to and read by the compiler.
 D supports the [_ASCII_] and [_Unicode_] text file formats and understands any Unicode character.
 
-An ASCII text file is read starting with the first character in the file but not so with an Unicode text files.
-Unicode text files have different _character encodings_ [^charencode] and deals with different machine endianness [^endianness].
-
-Unicode text files have an identification system to to determine and read the files correctly.
-This identification system is embedded in the text file and defined by Unicode as the _Byte Order Mark_ (BOM).
+An ASCII text file is read starting with the first character in the file but not so with Unicode text files.
+Because Unicode text files have different _character encodings_ [^charencode] and deals with different machine endianness [^endianness], Unicode text files have an identification system to to determine and read the files correctly.
+This identification system is embedded in the first bytes of a text file and defined by Unicode as the _Byte Order Mark_ (BOM).
 The compiler reads the BOM and converts the contents of the file to Unicode characters.
 
-| Format   | BOM |
-|----------|-----|
-| ASCII    | none (first character must be <= U+0000007F) |
-| UTF-8    | EF BB BF |
-| UTF-16BE | FE FF |
-| UTF-16LE | FF FE |
-| UTF-32BE | 00 00 FE FF |
-| UTF-32LE | FF FE 00 00 |
+| Format   | BOM | Location |
+|----------|-----|----------|
+| ASCII    | none (first character must be <= U+0000007F) | none |
+| UTF-8    | EF BB BF | first 3 bytes |
+| UTF-16BE | FE FF | first 2 bytes |
+| UTF-16LE | FF FE | first 2 bytes |
+| UTF-32BE | 00 00 FE FF | first 4 bytes |
+| UTF-32LE | FF FE 00 00 | first 4 bytes |
 
 ###### ASCII
 The American Standard Code for Information Interchange (ASCII) is a character-encoding scheme which was developed from telegraphic codes promoted by Bell data services.
