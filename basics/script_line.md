@@ -50,11 +50,11 @@ void main()
 }
 {% endhighlight %}
 
-There are limitations when using this approach.
-One major limitation is that no other compiler option can be used.
+One major limitation using this is that no other compiler option can be used.
 You cannot, for example, pass a debug option so the code is always executed in release build.
 Because of that, only one source file can be compiled and executed.
 Importing other source files other than the standard library is not possible.
+This is mainly the issue with the _shebang_ which treats all the arguments as one single argument.
 
 If the source you are going to execute is a simple, one-file program then this is one possible way to do it.
 
