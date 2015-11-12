@@ -9,7 +9,6 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-The void type describes an empty set of values.
-No variable of type void can be specified — it is used primarily to declare functions that return no values or to declare generic pointers to untyped or arbitrarily typed data.
-Any expression can be explicitly converted or cast to type void.
-However, such expressions are restricted to the following uses:
+The void type is described as a type that has no type.
+One of its uses is to tell the compiler that a function does not return a value or it returns a `void` type.
+
