@@ -1,5 +1,6 @@
-write("Hello world!");                  // 1 parameter
-write("Hello", " world", " again!");    // 3 parameters on same line as Line 1
+write("first");                         // 1st line
+write("second", " third", " fourth");   // goes to 1st line
 writeln();                              // new line
-writeln("Hello world!");                // 1 parameter and new line character
-writeln("Hello", " world", " again!");  // 3 parameters and new line character
+writeln("first");                       // goes to 2nd line, new line
+writeln("second", " third", " forth");  // goes to 3rd line, new line
+write("last");                          // goes to 4th line

@@ -1,4 +1,7 @@
-writef("%s", "Hello world!");           // Hello world!
-writef("%s", 100);                      // 100
-writef("%s %s", "Hello world!", 100);   // Hello world! 100
-writef("%s-%s", "Hello world!", 100);   // Hello world!-100
+writefln("%s", "first");                // send string 'first' to output
+writefln("%s", 100);                    // send integer 100 to output
+writefln("%d", 100);
+writefln("%d", -100);                   // send integer -100 to output
+writefln("%+d", 100);                   // send positive sign and integer 100 to output
+writefln("%s %s", "second", 100);       // send string 'second', a space, and 100 to output
+writefln("%s-%s", "third", 100);        // send string 'second', a dash, and 100 to output

@@ -1,2 +1,2 @@
-write("Hello world!");                  // Hello world!
-writef("Hello world!");                 // Hello world!
+write("first");                         // send string 'first' to output
+writef("second");                       // send string 'second' to output
