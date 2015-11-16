@@ -1,7 +1,7 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Preliminary
+chapter: Preliminaries
 section: Output Functions
 excerpt: write, writeln, writef and writefln functions
 group: DLang
@@ -23,7 +23,7 @@ Note that function calls are terminated with a _semicolon_ as all D language sta
 The basic syntax of the write functions is:
 
 {% highlight text %}
-    write[f][ln]([format,] [parameter...]);
+write[f][ln]([format,] [parameter...]);
 {% endhighlight %}
 
 * All enclosed in square brackets are optional.
