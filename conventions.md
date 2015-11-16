@@ -9,6 +9,23 @@ tags: [dlang, dguide, draft]
 
 This section introduces the reader to the conventions used throughout the guide.
 
+###### Syntax Format Display
+
+Syntax formats are displayed in a block and displayed in monochrome.
+The following describes what goes into a syntax format display:
+
+* Required items are enclosed in angle brackets `<>`. Used in commands.
+* Optional items are enclosed in square brackets `[]`. Used in commands.
+* The pipe symbol `|` means _or_, meaning one of the items listed. Used in commands.
+* Ellipses `...` means one or _more_ of the parameter. Used in command and function signatures.
+
+Here are some examples of a syntax display:
+
+{% highlight text %}
+dmd <source...> [-debug | -release]
+int function(T...)(T args);
+{% endhighlight %}
+
 ###### Source Code Display
 
 Source codes are displayed in a block as shown below with syntax highlighting and sometimes with line numbers.
@@ -46,15 +63,10 @@ Note that this source code convention is not how the author actually writes code
 The source codes presented here are meant for teaching and learning.
 Experienced programmers might therefore see violations and/or divergence from common and proper programming practice.
 
-1. Syntax format is displayed in a block.
-Optional parameters are enclosed in square brackets `[]`.
-Required parameters are enclosed in angle brackets `<>`.
-When the ellipses symbol `...` is used, it means can be _more_ than one.
-Commands or other items are shown in plain text.
-2. Comments are used to explain some code even though the code is discussed in the text.
+1. Comments are used to explain some code even though the code is discussed in the text.
 This is intentional.
 The source code comments are meant to be a summary or a quick note to the reader of what is happening on a line of code.
-3. Use of `...` in program source code means that 'other code goes here'.
+2. Use of `...` in program source code means that 'other code goes here'.
 
 
 {% comment %}
