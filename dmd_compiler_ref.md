@@ -80,6 +80,7 @@ Deprecated command-line options will be removed in future releases.
 | Option | Description |
 |--------|-------------|
 | -__noboundscheck__ | no array bounds checking (deprecated, use -_boundscheck_=_off_) |
+| -__property__ | Enforce property syntax. (Deprecated since 2.069) |
 
 ##### Common Options
 
@@ -95,7 +96,6 @@ Deprecated command-line options will be removed in future releases.
 |         | -__ignore__ &nbsp; Ignore unsupported pragmas. |
 |         | -__inline__ &nbsp; Do function inlining. |
 |         | -__main__ &nbsp; Add default main() (e.g. for unittesting). |
-|         | -__property__ &nbsp; Enforce property syntax. <p>Deprecated since 2.069</p> |
 | Imports | -__I__&lt;__path__&gt; \(uppercase i\) &nbsp; Specify path where compiler will look for imports. |
 |         | -__J__&lt;__path__&gt;&nbsp;... &nbsp; Specify path where compiler will look for string imports. |
 | Libraries | -__debuglib__=&lt;__name__&gt; &nbsp; Set symbolic debug library to _name_. |
