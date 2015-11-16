@@ -11,27 +11,26 @@ This section introduces the reader to the conventions used throughout the guide.
 
 ###### Source Code Display
 
-Source codes are displayed in a block like the following with syntax highlighting and sometimes line numbers.
-The line numbers are displayed to help refer the reader to important parts in the source code.
-Also, comments are sometimes included in the source code to aid both the author and the reader.
-Comments are also color coded to easily distinguish it from the source code.
+Source codes are displayed in a block as shown below with syntax highlighting and sometimes with line numbers.
+Syntax highlighting helps readers to easily identify parts of the language and line numbers help when referring to concerned source code lines.
 
-Here is an example of a source code block that displays the texts to the console.
+Here is an example of a source code block displaying texts to the console.
 
 {% highlight d linenos %}
+123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123
+         1         2         3         4         5         6         7         8         9
 writeln("D Programming Language");
 writeln("Line comment");                // line comment
 writeln("Block comment");               /* block comment */
 writeln("Nesting block comment");       /+ nesting block comment +/
 {% endhighlight %}
 
-###### Output Display
+###### Console and Output Display
 
-Source code ouput is displayed in a block like the following.
-Output text will be displayed in monochrome which may differ from the actual output in your computer or terminal.
-Output will sometimes have line numbers to refer the reader to important parts of the output.
-Sometimes the output will have some kind of comment associated with it in the output display.
-Comments are displayed with the hash (`#`) character and is color coded to distinguish it from the rest of the output.
+Console and program output is also displayed in a block but texts are displayed in monochrome or without syntax highlighting with an exception to comments or remarks.
+Comments or remarks are not part of the actual console texts or program outputs but embedded by the author so as to provide information on the actual console text or program output.
+They are colored for easy identification and begins with the hash (`#`) character followed by some comment text.
+Line numbers will also be present with the same purpose as source code displays.
 
 Here is an example of a console or output display.
 
@@ -49,11 +48,15 @@ Note that this source code convention is not how the author actually writes code
 The source codes presented here are meant for teaching and learning.
 Experienced programmers might therefore see violations and/or divergence from common and proper programming practice.
 
-1. Comments are used to explain some code even though the code is discussed in the text.
+1. Syntax format is displayed in a block.
+Optional parameters are enclosed in square brackets `[]`.
+Required parameters are enclosed in angle brackets `<>`.
+When the ellipses symbol `...` is used, it means can be _more_ than one.
+Commands or other items are shown in plain text.
+2. Comments are used to explain some code even though the code is discussed in the text.
 This is intentional.
 The source code comments are meant to be a summary or a quick note to the reader of what is happening on a line of code.
-
-2. Use of `...` means that 'other code goes here'.
+3. Use of `...` in program source code means that 'other code goes here'.
 
 
 {% comment %}
