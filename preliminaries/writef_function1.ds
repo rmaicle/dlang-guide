@@ -1,0 +1,2 @@
+write("Hello world!");                  // Hello world!
+writef("Hello world!");                 // Hello world!

@@ -1,0 +1,5 @@
+write("Hello world!");                  // 1 parameter
+write("Hello", " world", " again!");    // 3 parameters on same line as Line 1
+writeln();                              // new line
+writeln("Hello world!");                // 1 parameter and new line character
+writeln("Hello", " world", " again!");  // 3 parameters and new line character

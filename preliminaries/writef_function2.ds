@@ -1,0 +1,4 @@
+writef("%s", "Hello world!");           // Hello world!
+writef("%s", 100);                      // 100
+writef("%s %s", "Hello world!", 100);   // Hello world! 100
+writef("%s-%s", "Hello world!", 100);   // Hello world!-100

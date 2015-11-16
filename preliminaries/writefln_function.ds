@@ -1,0 +1,5 @@
+writeln("12345678901234567890");
+writefln("%20s", "Hello world!");
+writefln("%20d", 100);
+writefln("%-20s %d", "Hello world!", 2);
+writefln("%-20d %d", 100, 2);
