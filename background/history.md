@@ -11,13 +11,18 @@ tags: [dlang, dguide, draft]
 [Walter Bright] started working on a new programming language back in the 1990s.
 For Walter, this is nothing new.
 He has been implementing compilers for many years.
-He called it __Mars__ but people keep referring to it as __D__, a successor to the [C Programming Language].
-<span class="hide">Walter named his new programming language __Mars__ but the community around it keeps calling it __D__.</span>
+He called it _Mars_ but people keep referring to it as _D_, a successor to the [C Programming Language].
 
 D was [first released](http://www.digitalmars.com/d/1.0/changelog1.html#new000) in December 2001.
+
 [Andrei Alexandrescu] joined the language design team in 2006 and has contributed much to what the language is now.
-Andrei left Facebook this year to work on D full-time, which, I think, is a very bold move.
-And following that, the D Language Foundation is now incorporated.
+Andrei left Facebook in 2015 to work fulltime on the development of the language.
+Andrei is now officially addressed as the D Language Architect.
+
+The D Language Foundation is officially incorporated on October 18, 2015 to help fund and further the development of the language.
+
+The reference compiler [version 2.069.0](http://dlang.org/changelog/2.069.0.html), released on November 3, 2015 is now a self-hosting compiler.
+Meaning, it is now used to compiler and build itself.
 
 What an exciting time for D!
 
