@@ -17,8 +17,6 @@ Syntax highlighting helps readers to easily identify parts of the language and l
 Here is an example of a source code block displaying texts to the console.
 
 {% highlight d linenos %}
-123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123
-         1         2         3         4         5         6         7         8         9
 writeln("D Programming Language");
 writeln("Line comment");                // line comment
 writeln("Block comment");               /* block comment */
