@@ -11,7 +11,7 @@ Computers store and manipulate data as _bits_.
 A bit is the basic unit in computing.
 It has only two values or binary values: 0 and 1.
 To represent something more useful information in computing, the bit is composed to form bits of data.
-The smallest unit of data in computing is a _byte_, a sequence of 8 bits. [^8bits]
+The smallest data of addressable memory in computing is a _byte_, a sequence of 8 bits. [^8bits]
 
 Programming languages define different data types represented as a series of bits with differing lengths.
 This led to the development of _type system_ in programming languages.
