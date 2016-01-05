@@ -60,12 +60,12 @@ For examples, go to the specific sections: [`void`], [`boolean`], [`integral`], 
 
 [_Expressions_]: /dlang-guide/expressions.html
 
-[`void`]: /dlang-guide/types/void.html
-[`boolean`]: /dlang-guide/types/boolean.html
-[`integral`]: /dlang-guide/types/integral.html
-[`floating point`]: /dlang-guide/types/floating_point.html
-[`characters`]: /dlang-guide/types/character.html
-[`special types`]: /dlang-guide/types/special.html
+[`void`]: /dlang-guide/types/basic/void.html
+[`boolean`]: /dlang-guide/types/basic/boolean.html
+[`integral`]: /dlang-guide/types/basic/integral.html
+[`floating point`]: /dlang-guide/types/basic/floating_point.html
+[`characters`]: /dlang-guide/types/basic/character.html
+[`special types`]: /dlang-guide/types/basic/special.html
 [`structs`]: /dlang-guide/structs_unions_classes.html
 [`unions`]: /dlang-guide/structs_unions_classes.html
 [`classes`]: /dlang-guide/structs_unions_classes.html
