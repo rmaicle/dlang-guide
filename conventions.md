@@ -50,6 +50,7 @@ Line numbers may or may not be present. If it is present its purpose is the same
 Here is an example of a console or output display.
 
 {% highlight bash session linenos %}
+$ ./console_output
 D Programming Language
 Line comment                            # line comment
 Block comment                           # block comment
