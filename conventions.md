@@ -42,10 +42,10 @@ writeln("Nesting block comment");       /+ nesting block comment +/
 
 ###### Console and Output Display
 
-Console and program output is also displayed in a block but texts are displayed in monochrome or without syntax highlighting with an exception to comments or remarks.
-Comments or remarks are not part of the actual console texts or program outputs but embedded by the author so as to provide information on the actual console text or program output.
-They are colored for easy identification and begins with the hash (`#`) character followed by some comment text.
-Line numbers will also be present with the same purpose as source code displays.
+Console and program outputs are also displayed in a block but texts are displayed in monochrome or without syntax highlighting with an exception to comments or remarks.
+Comments or remarks are not part of the actual console texts or program outputs but manually embedded so as to provide information on the actual console text or program output.
+Comments are colored for easy identification and begins with the hash (`#`) character followed by some comment text.
+Line numbers may or may not be present. If it is present its purpose is the same as source code displays.
 
 Here is an example of a console or output display.
 
