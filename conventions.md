@@ -69,12 +69,8 @@ This is intentional.
 The source code comments are meant to be a summary or a quick note to the reader of what is happening on a line of code.
 2. Use of `...` in program source code means that 'other code goes here'.
 
-
-{% comment %}
-###### Quotes
+###### Quotes and Quotations
 
 A quoted material is presented as follows:
 
 > This is a sample quote - Anonymously Simple
-
-{% endcomment %}
