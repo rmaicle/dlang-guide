@@ -11,21 +11,23 @@ tags: [dlang, dguide, draft]
 The entry point of a D program is the `main()` function.
 It has the following variations:
 
-| Syntax              | Description |
-|---------------------|-------------|
-| void main( )         | Return nothing (void) and accepting no parameters. |
-| void main( string[ ] ) | Return nothing (void) and accepting zero or more string (string [ ]) parameters |
-| int main( )          | Returning an integer and accepting no parameters |
-| int main( string[ ] )  | Returning an integer and accepting zero or more string (string [ ]) parameters |
+| Syntax                 | Description |
+|------------------------|-------------|
+| void main( )           | Returns nothing (void), accepts no parameters. |
+| void main( string[ ] ) | Returns nothing (void), accepts zero or more string parameters |
+| int main( )            | Returns an integer, accepts no parameters |
+| int main( string[ ] )  | Returns an integer, accepts zero or more string parameters |
 
-Function `main()` always returns a value even if the function variant used returns nothing as described above.
+There can only be one program entry point.
+It is an error if the compiler finds more than one.
+The function `main()` always returns a value to the calling environment even if the function variant used is defined to return nothing.
 
-When the function used is defined to return nothing then the compiler injects code that automatically handles the return values.
+When the function used is defined to return nothing then the compiler injects code that automatically handles the return value.
 If the program terminates without an error, it returns zero (0).
 Otherwise it returns one (1).
 If the programmer tries to return a value from inside the `main()` function that is defined to return nothing then an error occurs.
 
-When the `main()` function used is defined to return an integer then it is the responsibility of the programmer to specify the actual values to be returned to the program's environment.
+When the `main()` function used is defined to return an integer then it is the responsibility of the programmer to specify the return values using the `return` statement.
 If the programmer did not or forgot to return a value then an error occurs.
 
 For the most part, only the simplest form of the program entry point will be used.

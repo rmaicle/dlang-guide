@@ -6,3 +6,5 @@ excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]
 ---
+
+##### `void` Arrays

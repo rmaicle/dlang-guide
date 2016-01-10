@@ -34,7 +34,7 @@ write[f][ln]([format,] [parameter...]);
 
 The `write` and `writeln` functions both accept any number of parameters to send to the output.
 The difference is that `writeln` appends a new line after the last parameter.
-The example below sends 'texts' or string of characters (or simply _strings_) to the console.
+The example below sends texts or string of characters (or simply _strings_) to the console.
 
 {% highlight d linenos %}
 {% include_relative write_function.ds %}

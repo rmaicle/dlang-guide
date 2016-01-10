@@ -8,15 +8,12 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-The first source text character of an ASCII text file is the character at offset 0x00 or at the first byte of the file.
-The first source text character of a Unicode text file is the character after the _Byte Order Mark_ (BOM).
-See the [Source Text section](source_text.html) for a brief definition of these files.
+If the first two text characters in the file are the hash (`#`) and exclamation (`!`) characters, the line is treated as a _script line_.
+(See the [Source Text section](source_text.html) for a brief description of accepted source files.)
 
-If the first two source text characters are the hash (`#`) and exclamation (`!`) characters, the line is treated as a _script line_.
-
-| Name    | Unicode          | ASCII           | Char   |
-|---------|------------------|-----------------|:------:|
-| Shebang | U+0023 + U+0021  | 35+33 0x23+0x21 |  #!  |
+| Name    | Unicode          | ASCII   | Hexadecimal   | Char   |
+|---------|------------------|---------|---------------|:------:|
+| Shebang | U+0023 + U+0021  | 35 + 33 | 0x23 + 0x21   | #!  |
 
 The _shebang_ character sequence in the first line of a file in Unix-like operating systems is generally used to run a script.
 This is an alternative way of running a D source file in Unix-like operating systems.
@@ -33,7 +30,7 @@ The _shebang_ interpreter/script directive syntax is shown below.
 | arg(s)      | optional arguments |
 
 There are two (2) ways to use the script line to execute a D source file.
-The first one is simple and limited and the other is a more capable modern alternative.
+The first one is simple but limited, the second is a more capable modern alternative.
     
 ##### Run the Source File Using dmd -run
     
