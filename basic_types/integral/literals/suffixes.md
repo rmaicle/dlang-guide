@@ -4,38 +4,11 @@ title: Guide to the D Programming Language
 chapter: Basic Types
 section: Integral Types
 subsection: Integer Literals
+subsubsection: Suffixes
 excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]
 ---
-
-Integer literals are a series of consecutive characters that the compiler interprets as an integral type.
-Commonly, these integer literals are written in decimal format; uses the base 10 number system.
-Integer literals may also be written in _binary_ or _hexadecimal_ formats.
-The language does not recognize _octal_ literals.
-Octal literals are specified using the `octal!` template from the library `std.conv` which works just like an actual octal literal.
-
-##### Integer Literal Prefixes
-
-To tell the compiler that an integer literal is in binary or hexadecimal format, integer literal _prefixes_ are used.
-Binary literals are prefixed with a zero (`0`) and the letter `B` (upper or lower case) followed by the actual binary number.
-Hexadecimal literals are prefixed with a zero (`0`) and the letter `X` (upper or lower case) followed by the actual hexadecimal number.
-
-Note that it is an error to specify an integer literal in decimal format prefixed with a zero (`0`) character.
-The zero prefix was used as an octal literal prefix like `0173` which is `123` in decimal.
-This is now a legacy restriction which may later be removed.
-
-{% highlight d linenos %}
-writeln(123);                       // 123
-writeln(0b1111011);                 // 123
-writeln(0x7B);                      // 123
-
-writeln(0123);                      // Error: octal literals 0123 are no longer supported,
-                                    //        use std.conv.octal!123 instead
-writeln(std.conv.octal!(173));      // 123
-{% endhighlight %}
-
-##### Integer Literal Suffixes
 
 Integer literal suffixes are used to specify that an integer literal is of a certain integer type.
 These suffixes are used only to specify types that are 32-bit integers or higher.
@@ -77,25 +50,4 @@ writeln(123UL)                      // ulong
 writeln(123uL)                      // ulong
 writeln(123LU)                      // ulong
 writeln(123Lu)                      // ulong
-{% endhighlight %}
-
-##### Digit Separator
-
-Integer literals can also use digit separators for formatting and readability.
-The underscore character (`_`) is used as digit separator and is ignored by the compiler.
-The digit separator cannot be used as the first character of decimal integer literals.
-The digit separator can be used with binary and hexadecimal integer literals.
-
-The following code demonstrates the use of the integral literals.
-
-{% highlight d linenos %}
-writeln(_123456);                   // error
-writeln(123_456UL);
-writeln(123_456_UL);
-
-writeln(0b_1000_0000UL);
-writeln(0b_1000_0000_UL);
-
-writeln(0x_80UL);
-writeln(0x_80_UL);
 {% endhighlight %}

@@ -2,14 +2,14 @@
 layout: reference_dlang
 title: Guide to the D Programming Language
 chapter: Basic Types
-section: Integral Types
+section: Conversions
 subsection: Integral Promotion
 excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-Integer Promotion is the conversion of a type to an integer type.
+Integral promotion is the conversion or promotion of a lower type to a higher type.
 All fundamental types that are lower than an `int` type is converted to an `int`.
 The character type `dchar` is converted to an unsigned integer `uint`.
 
