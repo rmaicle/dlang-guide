@@ -17,6 +17,6 @@ The `void` type is also used as function return type.
 A `void` function return type tells the compiler that a function does not return a value or that it returns a `void` type.
 The use of `void` in this scenario is necessary as function syntex declaration requires that a function specify the type of value it returns.
 
-~~~{d}
+{% highlight d %}
 void main() { }
-~~~
+{% endhighlight %}

@@ -39,7 +39,7 @@ The first source text character of a Unicode text file is the character after th
 
 ##### Digraphs and Trigraphs
 
-Digraphs or trigraphs are sequences of two and three characters which are treated by a programming language as a single character.
+Digraphs and trigraphs are sequences of two and three characters which are treated by a programming language as a single character.
 Digraphs or trigraphs are not used in the D language.
 
 [^charencode]: Character encodings are a way to unify different character sets of the world's writing systems to facilitate the interchange of digital text.

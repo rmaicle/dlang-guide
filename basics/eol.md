@@ -9,14 +9,15 @@ tags: [dlang, dguide, draft]
 ---
 
 End-of-line (EOL) characters are formatting control codes.
-The following EOL characters are recognized by the compiler.
+EOL characters are primarily used for formatting source code and are ignored by the compiler.
+The following table lists the EOL characters recognized and skipped by the compiler.
 
-| Name              | Char    | Unicode         | ASCII           | Hexadecimal | Remark |
-|-------------------|:-------:|:---------------:|:---------------:|:-----------:|--------|
-| End of Line (EOL) |  \\n    | U+000A          | 10              | 0x0A        | Line Feed (LF) |
-|                   |  \\r    | U+000D          | 13              | 0x0D        | Carriae Return (CR) |
-|                   | \\r\\n  | U+000D + U+000A | 13 + 10         | 0x0D+0x0A   | CR+LF |
-|                   |         | U+2028          |                 |             | Line Separator |
-|                   |         | U+2029          |                 |             | Paragraph Separator |
+| Name                 | Char    | ASCII <br/> Decimal | ASCII <br/> Hexadecimal | Unicode         |
+|----------------------|:-------:|:-------------------:|:-----------------------:|:---------------:|
+| Line Feed (LF)       |  \\n    | 10                  | 0x0A                    | U+000A          |
+| Carriage Return (CR) |  \\r    | 13                  | 0x0D                    | U+000D          |
+| CR + LF              | \\r\\n  | 13 + 10             | 0x0D+0x0A               | U+000D + U+000A |
+| Line Separator       |         |                     |                         | U+2028          |
+| Paragraph Separator  |         |                     |                         | U+2029          |
 
 Note that the EOF character is also considered as an EOL character.

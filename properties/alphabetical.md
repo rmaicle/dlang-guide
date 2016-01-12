@@ -72,11 +72,6 @@ User-defined properties can be created for user-defined types using Property Fun
 
 
 
-##### Sections
-{% include reference_dlang_section_links.html %}
-
-
-
 {% comment %}
 =====================================================================================================
 

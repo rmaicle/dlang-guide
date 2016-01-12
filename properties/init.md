@@ -13,14 +13,6 @@ The `init` property can only be used with boolean and numeric types, enumeration
 If the property is used with an expression, that expression is evaluated first and the resulting type is used.
 It is an error to use it with any other types.
 
-{% comment %}
-The language defines the following syntax for using the `init` type property where __source__ is either a type, variable, enumeration or structure.
-{% endcomment %}
-
-The language defines the following syntax for using the `init` type property:
-
-    <source>.init
-
 ##### Types and Variables
 
 The value of the `init` property is the default initializer for the type.

@@ -16,6 +16,15 @@ tags: [dlang, dguide, draft]
 
 ##### Literals
 
+Escape sequences begin with a backslash character (`\`).
+
+| Escape Sequence | Description |
+|:---------------:|-------------|
+| \n              | Add a new line character. This is the same as calling the `writeln` function. |
+| \'              | Add a single quote character. |
+| \"              | Add a double quote character. This is typically used to 'quote' something inside a string. Because strings are written inside double quotes, there must be a way to place a double quote inside the string without terminating or ending the string. This scenario will be shown in an example. |
+| \\\             | Add a backslash character. Because escape sequences start with a backslash character, there must be a way to add a backslash character in a string. |
+
 ##### Properties
 
 ##### Promotion
