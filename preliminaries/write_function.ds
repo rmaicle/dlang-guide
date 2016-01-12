@@ -1,6 +1,0 @@
-write("first");                         // 1st line
-write("second", " third", " fourth");   // goes to 1st line
-writeln();                              // new line
-writeln("first");                       // goes to 2nd line, new line
-writeln("second", " third", " forth");  // goes to 3rd line, new line
-write("last");                          // goes to 4th line

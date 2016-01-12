@@ -31,22 +31,3 @@ When the `main()` function used is defined to return an integer then it is the r
 If the programmer did not or forgot to return a value then an error occurs.
 
 For the most part, only the simplest form of the program entry point will be used.
-
-{% highlight d linenos %}
-{% include_relative entry_point.d %}
-{% endhighlight %}
-
-###### Compilation
-
-Here is the most basic syntax to compile a D source file using the reference compiler:
-
-    dmd <source> [source...]
-
-Here is an example how to use it assuming that the program code above is in a file named `hello.d`.
-
-{% highlight sh linenos %}
-$ dmd hello.d                   # compile
-$ ./hello                       # execute it
-Hello world!                    # program output
-{% endhighlight %}
-

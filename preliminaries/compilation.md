@@ -10,11 +10,29 @@ tags: [dlang, dguide, draft]
 
 Here is the most basic syntax on how to compile a D source file using the reference compiler:
 
-    dmd <source> [source...]
+<div markdown='1' class='syntax'>
 
-Here is an example how to use it assuming that the _hello world_ program is in a file named `hello.d`.
+###### Basic Syntax
 
-{% highlight sh linenos %}
+    dmd <source [...]>
+    
+where `source [...]` means one or more D source files.
+
+</div>
+
+The following _hello world_ source code is assumed to be in a D source file named `hello.d`.
+
+{% highlight d linenos %}
+import std.stdio;
+
+void main() {
+    writeln("Hello world!");
+}
+{% endhighlight %}
+
+Now, to compile the `hello.d` file and execute it:
+
+{% highlight bash session linenos %}
 $ dmd hello.d                   # compile
 $ ./hello                       # execute it
 Hello world!                    # program output

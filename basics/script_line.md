@@ -8,26 +8,34 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-If the first two text characters in the file are the hash (`#`) and exclamation (`!`) characters, the line is treated as a _script line_.
-(See the [Source Text section](source_text.html) for a brief description of accepted source files.)
+The _script line_ is the first line in a text file in Unix-like operating system that is used to execute a script.
+The first line of a text file is a script line if the first two text characters in the file is the hash (`#`) and exclamation (`!`) characters, also called a _shebang_.
 
-| Name    | Unicode          | ASCII   | Hexadecimal   | Char   |
-|---------|------------------|---------|---------------|:------:|
-| Shebang | U+0023 + U+0021  | 35 + 33 | 0x23 + 0x21   | #!  |
+Using the script line is an alternative way of running a D source file in Unix-like operating systems.
 
-The _shebang_ character sequence in the first line of a file in Unix-like operating systems is generally used to run a script.
-This is an alternative way of running a D source file in Unix-like operating systems.
+<div markdown='1' class='syntax'>
 
-##### Syntax
+###### Syntax
 
-The _shebang_ interpreter/script directive syntax is shown below.
+    #!<path>interpreter [arg [, ...]]
 
-    #!interpreter [arg(s)]
+`path`
+: The absolute path to the _interpreter_.
 
+`interpreter`
+: The interpreter name must not contain spaces and must include the absolute path (environment `$PATH` variable is _not_ searched for the location of interpreter)
+    
+`[arg [, ...]]`
+: Optional arguments
+
+</div>
+
+{% comment %}
 | Item        | Description |
 |:-----------:|-------------|
 | interpreter | interpreter name must not contain spaces and must include the absolute path (the environment `$PATH` variable is not searched for the location of _interpreter_) |
 | arg(s)      | optional arguments |
+{% endcomment %}
 
 There are two (2) ways to use the script line to execute a D source file.
 The first one is simple but limited, the second is a more capable modern alternative.
@@ -40,8 +48,7 @@ The example D source file (`hello.d`) below shows the script line using `dmd -ru
 {%raw%}#{%endraw%}!/usr/bin/dmd -run
 import std.stdio;
 
-void main()
-{
+void main() {
     debug writeln("(debug)");   // this line is not sent to the output
     writeln("Hello, world!");
 }
@@ -69,8 +76,7 @@ The code below is the content of the file `hello.d`.
 import std.stdio;
 import hello_import;
 
-void main(string[] args)
-{
+void main(string[] args) {
     debug writeln("(debug)");   // this line IS sent to the output
     writeln("Hello, world!");
     from_import();              // defined in hello_import.d
@@ -84,13 +90,16 @@ Using `rdmd` has a lot to offer and is by far a better alternative to run a D so
 To make a D source file with script line an executable file, it is required in Unix-like machines to change the access permissions to the file using `chmod`.
 The following shows how to use `chmod` and make the D source file an executable file.
 
-    $ chmod u+x <source>
+~~~
+$ chmod u+x <source>
+~~~
     
 The arguments `u+x` tells `chmod` to make the owner of the file `source` to have execute permission.
 Once done, the following command-line will run (execute) the file as if it is an executable binary file.
 
-    $ ./<source>
-
+~~~
+$ ./<source>
+~~~
 
     
 {% comment %}

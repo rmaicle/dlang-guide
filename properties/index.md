@@ -12,10 +12,20 @@ Property names are not reserved identifiers although user-defined properties may
 
 The language defines the following syntax for using type properties:
 
+<div markdown='1' class='syntax'>
+
+Type Property Syntax
+
     <source>.<property>
 
-* __source__ - type or expression
-* __property__ - one of the type properties
+`source`
+: Source can be a type or an expression.
+
+`property`
+: One of the type properties.
+  See list of all Type Properties.
+
+</div>
 
 
 Type-specific properties are described in their respective sections along with more specific examples.

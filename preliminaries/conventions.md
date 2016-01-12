@@ -20,10 +20,12 @@ The following describes what goes into a syntax format display:
 * The pipe symbol `|` means _or_, meaning one of the items listed. Used in commands.
 * Ellipses `...` means one or _more_ of the parameter. Used in command and function signatures.
 
-Here are some examples of a syntax display:
+Here are a few examples of syntax format display:
 
 {% highlight text %}
-dmd <source...> [-debug | -release]
+dmd <source [...]> [-debug | -release]
+int main();
+write(argument [, ...]);
 int function(T...)(T args);
 {% endhighlight %}
 
@@ -34,19 +36,18 @@ These texts are displayed in a block without highlighting or color coding but ma
 
 {% highlight text linenos %}
 Here is an example of a generic display             
-The texts are intentionally not highlighted         # or no syntax coloring
+The texts are intentionally not highlighted         # this is a comment
 {% endhighlight %}
 
 There is one extra thing to note here.
-Although not common, some texts displayed using the generic display format requires some little explanation within the text block.
-This is sometimes necessary to achieve compactness and provide a more direct and focused information to the reader regarding.
-To achieve this, the use of the hash (`#`) symbol to denote that the text following it are meant to be a comment or remark for the reader.
-The comment is usually at the right hand side of the text and are aligned to be easier to distinguish and read.
+Although not common, some texts displayed using the generic display format may need some explanation.
+This is sometimes necessary to achieve compactness and provide a more direct and focused information for the reader.
+To achieve this, the use of the hash (`#`) symbol to denote that the text following the symbol is meant to be a comment or remark.
 
 ##### Source Code Display
 
 Source codes are displayed in a block as shown below with syntax highlighting and sometimes with line numbers.
-Syntax highlighting helps readers to easily identify parts of the language and line numbers help when referring to concerned source code lines.
+Syntax highlighting helps the reader to easily identify parts of the language while line numbers help when referring to specific source code lines.
 
 Here is an example of a source code block displaying texts to the console.
 
@@ -58,24 +59,23 @@ writeln("Nesting block comment");       /+ nesting block comment +/
 {% endhighlight %}
 
 Also, to make source code displays a little shorter some common source codes lines are not included.
-This avoids syntactic noise that does not necessarily contribute to the actual code being discussed and helps to focus the reader.
+This avoids syntactic noise that does not necessarily contribute to the actual code being discussed.
 The most common candidates for omission are:
 
 * import module statements
 * program entry point or the function `main()`
 
-Here is a full blown hello world example that is common.
+Here is a small hello world example.
 
 {% highlight d linenos %}
 import std.stdio;                       // omitted
-
+                                        // omitted
 void main() {                           // omitted
     writeln("Hello world!");
 }                                       // omitted
 {% endhighlight %}
 
-The following code is the result of the omissions made from the above code.
-Those are four (4) lines removed.
+Compare the following code with the one above.
 
 {% highlight d linenos %}
 writeln("Hello world!");

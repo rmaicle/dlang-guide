@@ -8,8 +8,7 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-It is common to send output to the console and D has _write_ functions from its standard library.
-The write functions have four (4) variations:
+The standard library defines four (4) variations of its output function.
 
 | Function | Description |
 |----------|-------------|
@@ -18,17 +17,61 @@ The write functions have four (4) variations:
 | writef   | format output arguments and writes all evaluated arguments to the console |
 | writefln | same as above but sends a new line character after the last parameter |
 
-The basic syntax of the write functions is:
+##### Syntax
 
-{% highlight text %}
-write[f][ln]([format,] [parameter...]);
-{% endhighlight %}
+<div markdown='1' class='syntax'>
 
-* items inside square brackets are optional.
-* _format_ is used for the formatted output variation of the function.
-* _parameter_ is any literal, variable or expression.
-* _..._ more than one parameter can be passed to the function provided they are separated by a _comma_.
-* function calls are terminated with a _semicolon_.
+`write` and `writef` Functions
+
+    write[ln] ([argument [, ...]);
+    writef[ln]([formatstring,] [argument [, ...]);
+    
+`formatstring`
+: Is used with `writef` and `writefln` functions.
+  It may contain text, a format string or a combination of both.
+  The format string has the following syntax:
+
+  ~~~
+  %[flags][width][precision]formatcharacter
+  ~~~
+  
+  A formatstring begins with a percent `%` character.
+    
+  `flags`
+  : The flags are formatting features that can be turned on or off.
+    Here are the most common flags:
+
+    | Flags | Descriptionn |
+    |:-----:|--------------|
+    | -     | Left align |
+    | +     | Prefix numbers with a plus sign if positive and minus sign if negative |
+    | 0     | Prefix numbers with zeroes |
+    | ' '   | Prefix with spaces |
+  
+  `width`
+  : The width is an optional numeric value that specifies the number of characters with which the argument is to be displayed.
+    If the width is specified then the output is padded with zeroes or spaces.
+  
+  `precision`
+  : The precision is an optional numeric value for displaying floating-point types.
+    It controls the number of digits to be displayed after the decimal point.
+  
+  `formatcharacter`
+  : The formatcharacter is a letter that tells what kind of argument is concerned.
+    Here are the most common format characters:
+
+    | Character | Descriptionn |
+    |:----------------:|--------------|
+    | s               | Default format specifier. Converts the argument to string. |
+    | d               | Argument is an integral type and formatted as an integer. |
+    | f               | Argument is a floating point type and formatted in decimal notation. |
+
+`argument [, ...]`
+: One or more arguments.
+  An argument may be a literal, variable or expression.
+  If the formatted function is used, the number of arguments passed must correspond to the number of arguments specified in te format string.
+
+</div>
 
 ##### write and writeln Functions
 
@@ -37,12 +80,17 @@ The difference is that `writeln` appends a new line after the last parameter.
 The example below sends texts or string of characters (or simply _strings_) to the console.
 
 {% highlight d linenos %}
-{% include_relative write_function.ds %}
+write("first");                         // 1st line
+write("second", " third", " fourth");   // goes to 1st line
+writeln();                              // new line
+writeln("first");                       // goes to 2nd line, new line
+writeln("second", " third", " forth");  // goes to 3rd line, new line
+write("last");                          // goes to 4th line
 {% endhighlight %}
 
 The code above will have the following output.
 
-{% highlight console linenos %}
+{% highlight text linenos %}
 firstsecond third fourth
 first
 second third fourth
@@ -53,75 +101,35 @@ last
 
 The `writef` and `writefln` functions both accept any number of parameters to send to the output but accepts a _format string_ as the first parameter.
 A format string tells the function how to format the output or something like a template to follow.
-
-    writef(format_string, [parameter]...);
-
-A format string _can_ have _escape sequences_ and _format specifiers_.
-
-###### Escape Sequences
-
-For simplicity, escape sequences are sequences of characters used to perform special actions or append special characters.
-Escape sequences begin with a backslash character (`\`).
-Here are the most common escape sequences:
-
-| Escape Sequence | Description |
-|:---------------:|-------------|
-| \n              | Add a new line character. This is the same as calling the `writeln` function. |
-| \'              | Add a single quote character. |
-| \"              | Add a double quote character. This is typically used to 'quote' something inside a string. Because strings are written inside double quotes, there must be a way to place a double quote inside the string without terminating or ending the string. This scenario will be shown in an example. |
-| \\\             | Add a backslash character. Because escape sequences start with a backslash character, there must be a way to add a backslash character in a string. |
-
-###### Format Specifiers
-
-Format specifiers are a sequence of characters that describes how a parameter is to be displayed.
-Format specifiers begin with a percent character (`%`).
-Here is the syntax for format specifiers although the simplest forms will be used in examples.
-
-    %[flags][width][precision]format_character
-
-* _flags_ are formatting features that can be turned on or off.
-* _width_ is the number of characters withi which the parameter is to be displayed.
-The parameter is either padded with spaces or not if the width is not specified.
-The sign determines how padding is applied.
-A negative sign means to align the output to the left and a positive sign means to align the output to the right.
-This is primarily used in displaying column-like output.
-* _precision_ is for floating-point types that control the number of digits to be displayed after the decimal point.
-* _format_character_ is a letter that tells what kind of parameter is concerned.
-
-Here are the most common flags:
-
-| Flags | Descriptionn |
-|:-----:|--------------|
-| -     | Left align |
-| +     | Prefix positive numbers with a plus character |
-| 0     | Prefix numbers with zeroes |
-| ' '   | Prefix with spaces |
-
-
-Here are the most common format characters:
-
-| Format Specifier | Descriptionn |
-|:----------------:|--------------|
-| s               | Default format specifier. Converts the parameter to a string representation. |
-| d               | Parameter is an integral type and formatted as an integer. |
-| f               | Parameter is a floating point type and formatted in decimal notation. |
-
-###### Using writef and writefln Functions
-
-Formatted output discussion can span an entire chapter but we need only the basics now.
+Formatted output discussion is lengthy but we need only the basics now.
 One way to explain formatted output is through examples.
 
 First how the functions are used:
 
 {% highlight d linenos %}
-{% include_relative writef_function1.ds %}
+writef("first");                        // send string 'first' to output
+writefln("second");                     // send string 'second' to output
+writef("third");                        // send string 'third' to output
+{% endhighlight %}
+
+And here is the output of the above code assuming it is in a file `writef.d`:
+
+{% highlight text linenos %}
+firstsecond
+third
 {% endhighlight %}
 
 As mentioned above, format specifiers begin with a percent character (`%`).
-Here is an example showing the use of format specifiers.
+Here are examples showing how to specify format specifiers.
 
 {% highlight d linenos %}
-{% include_relative writef_function2.ds %}
+writefln("%s", "first");                // send string 'first' to output
+writefln("%s", 100);                    // send integer 100 to output
+writefln("%d", 100);
+writefln("%d", -100);                   // send integer -100 to output
+writefln("%+d", 100);                   // send positive sign and integer 100 to output
+writefln("%s %s", "second", 100);       // send string 'second', a space, and 100 to output
+writefln("%s-%s", "third", 100);        // send string 'second', a dash, and 100 to output
 {% endhighlight %}
 
 Output:
@@ -136,11 +144,21 @@ second 100
 third-100
 {% endhighlight %}
 
-Here is an example using the _width_ format specifier, specifically width value is ten (10).
+Here are examples using the _width_ format specifier, specifically width value is ten (10).
 The period character is used as _terminators_ to show the start and the end of the output.
 
 {% highlight d linenos %}
-{% include_relative writef_function3.ds %}
+writefln("123456789012");
+writefln("%010s", 100);                 // prefix 100 with zeroes
+writefln("% 10s", 100);                 // prefix 100 with spaces
+writefln("%010s", -100);                // prefix -100 with zeroes
+writefln("%+010s", 100);                // prefix 100 with + and zeroes
+writefln("%+ 10s", 100);                // prefix 100 with +, ingores space
+writefln("%010s", "first");             // right align, ignores zero
+writefln("%+010s", "second");           // right align, ignores +, ignores zero
+writefln("%s%10s%s",  ".", "aaa", "."); // right align 'aaa'
+writefln("%s%-10s%s", ".", "bbb", "."); // left align 'bbb'
+writefln("%s%10s%s",  ".", "ccc", ".");
 {% endhighlight %}
 
 Output:

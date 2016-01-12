@@ -1,2 +1,0 @@
-write("first");                         // send string 'first' to output
-writef("second");                       // send string 'second' to output
