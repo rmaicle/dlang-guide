@@ -41,7 +41,7 @@ The standard library defines four (4) variations of its output function.
   : The flags are formatting features that can be turned on or off.
     Here are the most common flags:
 
-    | Flags | Descriptionn |
+    | Flags | Description |
     |:-----:|--------------|
     | -     | Left align |
     | +     | Prefix numbers with a plus sign if positive and minus sign if negative |
