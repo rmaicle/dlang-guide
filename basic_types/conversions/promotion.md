@@ -9,8 +9,8 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-Integral promotion is the conversion or promotion of a lower type to a higher type.
-All fundamental types that are lower than an `int` type is converted to an `int`.
+Integral promotion is the conversion or promotion of a type to a wider type.
+All fundamental types that are narrower than an `int` type is converted to an `int`.
 The character type `dchar` is converted to an unsigned integer `uint`.
 
 | From   | Bits | To   | Bits |

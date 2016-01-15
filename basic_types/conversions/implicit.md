@@ -10,30 +10,29 @@ tags: [dlang, dguide, draft]
 ---
 
 Implicit conversions are used to automatically convert types as required.
-The following applies to implicit conversion of numeric types:
+It follows the widening conversion or promotion rule.
+Which also means that integral and floating point types are implicitly convertible to a floating point type.
 
-1. It is an error to implicitly convert an integral value to a narrower type.
-    
-    ~~~{d}
-    int i = 0;
-    byte b = i;     // Error: cannot implicitly convert expression (i) of type int to byte
-    ~~~
+The following lists the type conversions considered as errors regarding implicit conversions:
 
-2. It is an error to implicitly convert floating point values to an integral type.
+1. Integral value to a narrower type.
+2. Floating point values to an integral type.
+3. Float, double or real type to an imaginary floating point type.
+4. Float, double or real type to a complex floating point type.
+5. Imaginary floating point type to a float, double or real types.
+6. Complex floating point type to a non-complex floating point type.
 
-    ~~~{d}
-    double d = 0.0;
-    byte b = d;     // Error: cannot implicitly convert expression (f) of type float to byte
-    ~~~
+{% highlight d %}
+byte x = cast(int)1;        // allowed, literal 1 fits in a byte
+byte y = cast(int)1000;     // error, literal 1000 does not fit in a byte
 
-3. Integral or floating point values are implicitly convertible to any floating point value.
+int i = 0;
+byte b = i;                 // (1) int to byte
+byte c = 0.0;               // (2) double to byte
+idouble fi = 0.0;           // (3) double to imaginary double
+cdouble fc = 0.0;           // (4) double to complex float
+float f = 0.0Fi;            // (5) imaginary float to float
 
-    ~~~{d}
-    ubyte b = 255;
-	double d = b;
-    float f = d;
-    ~~~
+// Add example for item 6
+{% endhighlight %}
 
-4. It is an error to implicitly convert a complex floating point type to a non-complex floating point type.
-5. It is an error to implicitly convert an imaginary floating point type to a float, double or real types.
-6. It is an error to implicitly convert a float, double or real type to an imaginary floating point type.
