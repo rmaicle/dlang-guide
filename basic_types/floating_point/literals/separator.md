@@ -10,7 +10,4 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-Floating point literals uses the same digit separators as integer literals.
-
-> Floating literals can have embedded ‘_’ characters, which are ignored.
-> The embedded ‘_’ are useful for formatting long literals to make them more readable, such as using them as a thousands separator:
+Floating point literals uses the same digit separator as in integer literals.

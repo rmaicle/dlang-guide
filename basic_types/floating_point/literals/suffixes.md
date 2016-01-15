@@ -14,3 +14,7 @@ tags: [dlang, dguide, draft]
 > Floats can be followed by one f, F, or L suffix.
 > The f or F suffix means it is a float, and L means it is a real.
 > If a floating literal is followed by i, then it is an ireal (imaginary) type.
+
+> Complex literals are not tokens, but are assembled from real and imaginary expressions during semantic analysis:
+>
+>     4.5 + 6.2i  // complex number (phased out)

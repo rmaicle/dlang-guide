@@ -17,7 +17,5 @@ Floating point literals uses the same digit separators as integer literals.
 > It is an error if the literal exceeds the range of the type. It is not an error if the literal is rounded to fit into the significant digits of the type.
 
 > Complex literals are not tokens, but are assembled from real and imaginary expressions during semantic analysis:
-
-> ~~~{d}
-> 4.5 + 6.2i      // complex number (phased out)
-> ~~~
+>
+>     4.5 + 6.2i      // complex number (phased out)
