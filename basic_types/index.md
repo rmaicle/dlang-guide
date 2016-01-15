@@ -25,6 +25,12 @@ The language also defines some __special types__ which are derived from or alias
 
 __Integral__ and __floating point__ types are collectively called _numeric_ or _arithmetic_ types.
 
+##### Wide and Narrow Types
+
+The base terms _wide_ and _narrow_ are used to refer to the size (number of bits/bytes) of a certain type compared to another.
+A wider type means a type that has more bits compared to another.
+A narrower type means a type that has less bits compared to another.
+
 ##### Sections
 {% include reference_dlang_section_links.html %}
 
