@@ -33,7 +33,7 @@ Note that the integral types `cent` and `ucent` are reserved for future use.
 The compiler will produce the following error in an attempt to use them:
 
     Error: cent and ucent types not implemented
-
+    
 ##### Aliased Types
 
 It is necessary to define some aliased integral types that are dependent on the computer architecture being used.
