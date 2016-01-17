@@ -18,7 +18,7 @@ The following are links to the official D Programming Language:
 
 * [Official Site (dlang.org)] (http://dlang.org/)
 * [Language Specification] (http://dlang.org/dlangspec.pdf)
-* [Runtime Library Reference] (http://dlang.org/phobos/index.html)
+* [Library Reference] (http://dlang.org/phobos/index.html)
 * [Wiki] (http://wiki.dlang.org/)
 
 ## Organization
