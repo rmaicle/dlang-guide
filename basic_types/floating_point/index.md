@@ -29,15 +29,3 @@ The size of real is the largest floating point size implemented in hardware; 80-
 {% include reference_dlang_subsection_links.html %}
 
 [^fixed_point]: Types that have a fixed number of digits before and after the decimal point is called _fixed-point_ representations.
-
-
-{% comment %}
-Precision is a concept that we come across in daily life but do not talk about
-much. Precision is the number of digits that is used when specifying a value. For
-example, when we say that the third of 100 is 33, the precision is 2 because 33 has
-2 digits. When the value is specified more precisely as 33.33, then the precision is 4
-digits.
-The number of bits that each floating type has not only affects its maximum
-value, but also its precision. The greater the number of bits, the more precise the
-values are.
-{% endcomment %}
