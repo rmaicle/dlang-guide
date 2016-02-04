@@ -9,8 +9,11 @@ tags: [dlang, dguide, draft]
 ---
 
 The table below lists all Type Properties in alphabetical order.
+{% comment %}
 The following legend is used in the Type Properties table below.
+{% endcomment %}
 
+{% comment %}
 | Type   | Symbol | Description       |
 |:------:|:------:|-------------------|
 | enum   | n      | named enum        |
@@ -20,6 +23,17 @@ The following legend is used in the Type Properties table below.
 | struct | f      | struct field      |
 | class  | f      | class field       |
 | class  | i      | inner class       |
+{% endcomment %}
+
+###### Legend:
+
+* n - named enumeration
+* s - static array
+* d - dynamic array
+* a - associative array
+* f (struct) - structure member or field
+* f (class) - class member or field
+* i - inner class
 
 | Property          | boolean | integral | floating point | enum    | arrays    | struct  | class   |
 |:------------------|:-------:|:--------:|:--------------:|:-------:|:---------:|:-------:|:-------:|

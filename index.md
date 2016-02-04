@@ -10,16 +10,16 @@ tags: [dlang, dguide, draft]
 This is my experimental Guide to the [D Programming Language](http://dlang.org/).
 This is a _work in progress_.
 Information presented here possibly _contain errors_ and _may not be up-to-date_.
-This guide is initially based on the specification as of version [_version 2.068.2_] (http://dlang.org/changelog/2.068.2.html) of the _Digital Mars D_ compiler.
+This guide is initially based on the official language specification as of [_version 2.068.2_](http://dlang.org/changelog/2.068.2.html).
 
 ## Official References
 
 The following are links to the official D Programming Language:
 
-* [Official Site (dlang.org)] (http://dlang.org/)
-* [Language Specification] (http://dlang.org/dlangspec.pdf)
-* [Library Reference] (http://dlang.org/phobos/index.html)
-* [Wiki] (http://wiki.dlang.org/)
+* [Official Site (dlang.org)](http://dlang.org/)
+* [Language Specification](http://dlang.org/dlangspec.pdf)
+* [Library Reference](http://dlang.org/phobos/index.html)
+* [Wiki](http://wiki.dlang.org/)
 
 ## Organization
 
