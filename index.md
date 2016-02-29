@@ -12,6 +12,12 @@ This is a _work in progress_.
 Information presented here possibly _contain errors_ and _may not be up-to-date_.
 This guide is initially based on the official language specification as of [_version 2.068.2_](http://dlang.org/changelog/2.068.2.html).
 
+## Status = Work in Progress
+
+I will be posting here about updates.
+So stay tuned.
+
+
 ## Official References
 
 The following are links to the official D Programming Language:
