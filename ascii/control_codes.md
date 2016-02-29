@@ -13,7 +13,7 @@ The following table shows the ASCII control code chart.
 | Binary  | Oct | Dec | Hex | Abbr | Caret notation | Escape code | Name |
 |:-------:|:---:|:---:|:---:|:----:|:--------------:|:-----------:|------|
 | 0000000 | 000 |   0 |  00 | NUL  | &#94;@         |     \0      | Null character
-| 0000001 | 001 |   1 |  01 | SOH  | &#94;A         |             | Start of Header
+| 0000001 | 001 |   1 |  01 | SOH  | &#94;A         |             | Start of Heading
 | 0000010 | 002 |   2 |  02 | STX  | &#94;B         |             | Start of Text
 | 0000011 | 003 |   3 |  03 | ETX  | &#94;C         |             | End of Text
 | 0000100 | 004 |   4 |  04 | EOT  | &#94;D         |             | End of Transmission
