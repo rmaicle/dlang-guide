@@ -11,8 +11,15 @@ The _American Standard Code for Information Interchange (ASCII)_ is a character-
 The first edition of the ASCII standard was published in 1963 and revisions went on until 1986.[^ascii_pub]
 The ASCII character set was later incorporated into the _Unicode_ character set without changing their codes to allow backwards compatibility. [^ascii_unicode]
 
-The ASCII control codes and printable codes are reproduced here for reference.
-See below links for specific code charts.
+###### Control Codes
+
+Control codes are control characters that are non-printable chararacters in a character set which does not represent a written symbol.
+They are used to '_cause an effect_'.
+ASCII control codes are carried over to the Unicode.
+
+###### Printable Codes
+
+TODO
 
 ##### Sections
 {% include reference_dlang_section_links.html %}
