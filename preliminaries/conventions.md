@@ -10,39 +10,85 @@ tags: [dlang, dguide, draft]
 
 This section introduces the reader to the conventions used throughout the guide.
 
-##### Syntax Format Display
+##### Syntax Display
 
-Syntax formats are displayed in a block and displayed in monochrome.
-The following describes what goes into a syntax format display:
+Syntax display is presented in a block in monochrome color with three (3) inner blocks; the _heading block_, _syntax block_ and the _definition block_.
 
-* Required items are enclosed in angle brackets `<>`. Used in commands.
-* Optional items are enclosed in square brackets `[]`. Used in commands.
-* The pipe symbol `|` means _or_, meaning one of the items listed. Used in commands.
-* Ellipses `...` means one or _more_ of the parameter. Used in command and function signatures.
+###### Heading Block
+Usually a label or a some description. It can have paragraphs and tables.
 
-Here are a few examples of syntax format display:
+###### Syntax Block
+The syntax format block displays the actual use of a command or function which is displayed in monospace font.
 
-{% highlight text %}
-dmd <source [...]> [-debug | -release]
-int main();
-write(argument [, ...]);
-int function(T...)(T args);
-{% endhighlight %}
+* Can have multiple syntax specifications
+* Required items are enclosed in angle brackets (`<>`).
+* Optional items are enclosed in square brackets (`[]`).
+* The pipe symbol (`|`) means _or_, meaning one of the items listed.
+* Ellipses (`...`) means one or _more_ of the parameter.
+
+###### Definition Block
+The definition block contains, well, the definition and/or description of the command, function or arguments in the syntax format block.
+It can have paragraphs and tables.
+
+* Required arguments is formatted as `normal monospaced text`.
+* Optional arguments is formatted as _`italic monospaced text`_.
+
+###### Examples
+
+Here is a simplified example of a _syntax display_ for the reference compiler command-line syntax.
+
+<div markdown='1' class='syntax linenos'>
+Optional syntax label or description.
+
+This is an optional paragraph in the heading block.
+
+    dmd --version | --help | -man
+    dmd <source[, ...]> [-debug|-release]
+
+This is the start of the definition block.
+
+`source[, ...]`
+: One or more source code files separated by a comma.
+
+_`-debug`_
+: Description of commmand-line argument.
+
+_`-release`_
+: Description of commmand-line argument.
+</div>
+
+Here is a mockup example of a function syntax for the `write[f][ln]` functions.
+
+<div markdown='1' class='syntax'>
+Syntax of `write` and `writef` Functions
+
+    write[ln] ([argument [, ...]);
+    writef[ln]([formatstring,] [argument [, ...]);
+    
+###### Parameters:    
+`formatstring`
+: description of `formatstring`.
+  
+`argument [, ...]`
+: One or more arguments.
+  
+###### Return Value:
+None.
+</div>
 
 ##### Generic Display
 
 It is sometimes necessary to display something in monospace format which are not necessarily source codes or program outputs.
 These texts are displayed in a block without highlighting or color coding but may be displayed with or without line numbers.
 
+Although not common, some texts displayed using the generic display format may need some explanation.
+This is sometimes necessary to achieve compactness and provide a more direct and focused information for the reader.
+To achieve this, the use of the hash (`#`) symbol to denote that the text following the symbol is meant to be a comment or remark.
+
 {% highlight text linenos %}
 Here is an example of a generic display             
 The texts are intentionally not highlighted         # this is a comment
 {% endhighlight %}
-
-There is one extra thing to note here.
-Although not common, some texts displayed using the generic display format may need some explanation.
-This is sometimes necessary to achieve compactness and provide a more direct and focused information for the reader.
-To achieve this, the use of the hash (`#`) symbol to denote that the text following the symbol is meant to be a comment or remark.
 
 ##### Source Code Display
 
@@ -58,7 +104,7 @@ writeln("Block comment");               /* block comment */
 writeln("Nesting block comment");       /+ nesting block comment +/
 {% endhighlight %}
 
-Also, to make source code displays a little shorter some common source codes lines are not included.
+Also, to make source code displays a little shorter, some common source code lines are not included.
 This avoids syntactic noise that does not necessarily contribute to the actual code being discussed.
 The most common candidates for omission are:
 
@@ -89,10 +135,9 @@ The convention used here is not recommended as a convention to follow.
 Experienced programmers might therefore see violations and/or divergence from common and proper coding practices.
 
 1. Comments are used to explain some code even though the code is discussed in the text.
-This is intentional.
-The source code comments are meant to be a summary or a quick note to the reader of what is happening on a line of code.
-2. Use of `...` in program source code means that 'other code goes here'.
-
+   This is intentional.
+   The source code comments are meant to be a summary or a quick note to the reader of what is happening on a line of code.
+2. Use of ellipses (`...`) in program source code means that _'other code goes here'_.
 
 ##### Console and Output Display
 
@@ -116,3 +161,12 @@ Nesting block comment                   # nesting block comment
 A quoted material is presented as follows:
 
 > This is a sample quote - Anonymously Simple
+
+{% comment %}
+{% highlight text %}
+┌─┐
+│ │
+└─┘
+◀ ▶ ▲ ▼
+{% endhighlight %}
+{% endcomment %}
