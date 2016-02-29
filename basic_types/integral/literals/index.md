@@ -10,7 +10,7 @@ tags: [dlang, dguide, draft]
 ---
 
 Integer literals are a series of consecutive characters that the compiler interprets as an integral type.
-Literal prefixes tell the compiler that a certain integer literal is of a certain number system aside from the usual decimal format.
+Literal prefixes tell the compiler that a certain integer literal is of a certain number system aside from the default decimal number system.
 Literal suffixes tell the compiler that a certain integer literal belongs to a certain group like signed, unsigned.
 Literal digit separators are used for formatting integer literals.
 
