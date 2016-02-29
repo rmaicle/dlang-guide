@@ -26,22 +26,26 @@ You can specify different options in any order.
 If conflicting options are encountered, the last parsed option takes precedence (ex. dmd test.d -m32 -m64 builds test.d in 64-bit architecture).
 Specifying the same option multiple times, as in the case of Import Path (`-Ipath`) option, will treat the search order of the paths as they are specified.
 
-###### Syntax
-The reference compiler follows the following command-line syntax:
+###### Reference Compiler Command-line Syntax
 
-    dmd [source... [@cmdfile] [-option...]] | [--version | --help | -man]
+The Digital Mars Compiler has the following command-line syntax:
 
-| Arguments    | Description |
-|--------------|-------------|
-| `source...`  | one or more D sources files. <p>The compiler recognizes D source files as files without extension and files with the `.d` extension.</p> |
-| `@cmdfile`   | command file is a text file where the compiler reads _commands_ from and used to compile the specified D source file(s). |
-| `-option...` | one or more _commands_ passed to the compiler |
+<div markdown='1' class='syntax'>
 
-{% comment %}
--option=value _commands_ with arguments that are passed to the compiler to perform the specfic action or use the specified _value_ to perform the specific action.
-{% endcomment %}
+    dmd --version | --help | -man
+    dmd source[, ...] [@cmdfile] [option[...]]
+    
+`source[, ...]`
+: One or more D sources files separated by a comma character.
 
+  The compiler recognizes D source files as files without extension and files with the `.d` extension.
 
+_`@cmdfile`_
+: A command file is a text file where the compiler reads _commands_ from and uses those commands to compile the specified D source file(s).
+
+_`option[...]`_
+: One or more _options_ passed to the compiler to perform specific actions.
+</div>
 
 ##### Sections
 {% include reference_dlang_section_links.html %}

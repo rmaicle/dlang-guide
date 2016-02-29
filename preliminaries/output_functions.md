@@ -17,11 +17,10 @@ The standard library defines four (4) variations of its output function.
 | writef   | format output arguments and writes all evaluated arguments to the console |
 | writefln | same as above but sends a new line character after the last parameter |
 
-##### Syntax
+Here is the syntax for the `write` and `writef` functions from the D standard library.
+This does not include the complete information on the functions but only shows what is used in this guide.
 
 <div markdown='1' class='syntax'>
-
-`write` and `writef` Functions
 
     write[ln] ([argument [, ...]);
     writef[ln]([formatstring,] [argument [, ...]);
@@ -73,7 +72,7 @@ The standard library defines four (4) variations of its output function.
 
 </div>
 
-##### write and writeln Functions
+##### `write` and `writeln` Functions
 
 The `write` and `writeln` functions both accept any number of parameters to send to the output.
 The difference is that `writeln` appends a new line after the last parameter.
@@ -97,7 +96,7 @@ second third fourth
 last
 {% endhighlight %}
 
-##### writef and writefln Functions
+##### `writef` and `writefln` Functions
 
 The `writef` and `writefln` functions both accept any number of parameters to send to the output but accepts a _format string_ as the first parameter.
 A format string tells the function how to format the output or something like a template to follow.
