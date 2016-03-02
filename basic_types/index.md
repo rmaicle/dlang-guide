@@ -19,8 +19,7 @@ In summary, type system is a set of rules governing data and constructs to make 
 Type system is a broad subject under active research.
 Some topics will introduce the reader on how it is applied or used in the language.
 
-Basic types define the fundamental data types of the language.
-Fundamental data types are grouped into five (5) categories; __void__, __boolean__, __integral__, __floating point__, and __character__ types.
+The Basic types define the fundamental data types of the language; __void__, __boolean__, __integral__, __floating point__, and __character__ types.
 __Integral__ and __floating point__ types are collectively called _numeric_ or _arithmetic_ types.
 The language also defines some __special types__ which are derived from or aliases of fundamental data types.
 
