@@ -29,6 +29,12 @@ The base terms _wide_ and _narrow_ are used to refer to the size (number of bits
 A wider type means a type that has more bits compared to another.
 A narrower type means a type that has less bits compared to another.
 
+##### Type Conversions
+
+Fundamental types may be implicitly and explicitly converted to another type.
+Explicit conversion can be achieved by using the `cast` expression.
+This is discussed in the _Basic Types : Conversions Section_.
+
 ##### Sections
 {% include reference_dlang_section_links.html %}
 
