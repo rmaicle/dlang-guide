@@ -18,3 +18,9 @@ The following Type Properties are defined for the boolean type:
 * __init__ - in itial value the language assigns to the type
 * __min__ - minimum or smallest value the type can accommodate
 * __max__ - maximum or largest value the type can accommodate
+
+The following table shows the boolean type property values.
+
+| Type | sizeof | alignof | init  | min   | max  |
+|------|:-------|:-------:|:-----:|:-----:|:-----|
+| bool | 1      | 1       | false | false | true |
