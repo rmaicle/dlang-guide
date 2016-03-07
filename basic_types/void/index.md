@@ -20,3 +20,8 @@ The use of `void` in this scenario is necessary as function syntex declaration r
 {% highlight d %}
 void main() { }
 {% endhighlight %}
+
+A void type does not have a literal.
+
+##### Sections
+{% include reference_dlang_subsection_links.html %}
