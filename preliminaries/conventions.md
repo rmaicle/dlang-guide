@@ -14,26 +14,24 @@ This section introduces the reader to the conventions used throughout the guide.
 
 Syntax display is presented in a block in monochrome color with three (3) inner blocks; the _heading block_, _syntax block_ and the _definition block_.
 
-###### Heading Block
-Usually a label or a some description. It can have paragraphs and tables.
+Heading Block
+: Usually a label or a some description. It can have paragraphs and tables.
 
-###### Syntax Block
-The syntax format block displays the actual use of a command or function which is displayed in monospace font.
+Syntax Block
+: The syntax format block displays the actual use of a command or function which is displayed in monospace font.
 
-* Can have multiple syntax specifications
-* Required items are enclosed in angle brackets (`<>`).
-* Optional items are enclosed in square brackets (`[]`).
-* The pipe symbol (`|`) means _or_, meaning one of the items listed.
-* Ellipses (`...`) means one or _more_ of the parameter.
+  * Can have multiple syntax specifications
+  * Required items are enclosed in angle brackets (`<>`).
+  * Optional items are enclosed in square brackets (`[]`).
+  * The pipe symbol (`|`) means _or_, meaning one of the items listed.
+  * Ellipses (`...`) means one or _more_ of the parameter.
 
-###### Definition Block
-The definition block contains, well, the definition and/or description of the command, function or arguments in the syntax format block.
+Definition Block
+: The definition block contains, well, the definition and/or description of the command, function or arguments in the syntax format block.
 It can have paragraphs and tables.
 
-* Required arguments is formatted as `normal monospaced text`.
-* Optional arguments is formatted as _`italic monospaced text`_.
-
-###### Examples
+  * Required arguments is formatted as `normal monospaced text`.
+  * Optional arguments is formatted as _`italic monospaced text`_.
 
 Here is a simplified example of a _syntax display_ for the reference compiler command-line syntax.
 
