@@ -16,20 +16,7 @@ Signed types are `byte`, `short`, `int` and `long`.
 _Unsigned_ types have positive values starting from zero.
 Unsigned types correspond to the signed types above with the prefix `u`; `ubyte`, `short`, `uint` and `ulong`.
 
-| Type   | Size (bytes) | Size (bits) | Alignment (bytes) | Init | Minimum                    | Maximum                    |
-|--------|:------------:|:-----------:|:-----------------:|:----:|---------------------------:|---------------------------:|
-| byte   |   1          |    8        |  1                |  0   | -128                       | +127                       |
-| ubyte  |   1          |    8        |  1                |  0   | 0                          | 255                        |
-| short  |   2          |   16        |  2                |  0   | -32,768                    | 32,767                     |
-| ushort |   2          |   16        |  2                |  0   | 0                          | 65,535                     |
-| int    |   4          |   32        |  4                |  0   | -2,147,483,648             | 2,147,483,647              |
-| uint   |   4          |   32        |  4                |  0   | 0                          | 4,294,967,295              |
-| long   |   8          |   64        |  8                |  0L  | -9,223,372,036,854,775,808 | 9,223,372,036,854,775,807  |
-| ulong  |   8          |   64        |  8                |  0UL | 0                          | 18,446,744,073,709,551,615 |
-| cent   |              |             |                   |      |                            |                            |
-| ucent  |              |             |                   |      |                            |                            |
-
-Note that the integral types `cent` and `ucent` are reserved for future use.
+Integral types `cent` and `ucent` are reserved for future use.
 The compiler will produce the following error in an attempt to use them:
 
     Error: cent and ucent types not implemented
