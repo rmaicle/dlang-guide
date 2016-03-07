@@ -18,13 +18,13 @@ A complex floating point value can be assembled from real and imaginary expressi
 
 Floating point literals can have _affixes_ and can be written with _digit separators_.
 
-| Affix       | Type   | Description |
-|-------------|--------|-------------|
-| `0x` / `0X` | prefix | Hexadecimal floating point literal |
-| `p` / `P`   | prefix | Decimal exponent literal. Can be used with hexadecimal floating point literals only. |
-| `f` / `F`   | suffix | Float type. |
-| `L`         | suffix | Real type. |
-| `i`         | suffix | Imaginary type. |
+| Affix        | Type   | Description |
+|:------------:|--------|-------------|
+| `0x` or `0X` | prefix | Hexadecimal floating point literal |
+| `p` or `P`   | prefix | Decimal exponent literal. Can be used with hexadecimal floating point literals only. |
+| `f` or `F`   | suffix | Float type. |
+| `L`          | suffix | Real type. |
+| `i`          | suffix | Imaginary type. |
 
 ##### Prefix
 
