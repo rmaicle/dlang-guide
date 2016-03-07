@@ -19,7 +19,8 @@ Type Property Syntax
     <source>.<property>
 
 `source`
-: Source can be a type or an expression.
+: Source can be a _type_ or an _expression_.
+  To evaluate source as an expression, it must be enclosed within parenthesis.
 
 `property`
 : One of the type properties.

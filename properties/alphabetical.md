@@ -75,21 +75,12 @@ The following legend is used in the Type Properties table below.
 | tupleof           |         |          |                |         |           |   yes   |   yes   |
 | values            |         |          |                |         |    (a)    |         |         |
 
-> The built-in properties `sizeof`, `alignof`, and `mangleof` may not be declared as fields or methods in `structs`, `unions`, `classes` or `enums`.
-> (§ 19.Property Functions)
-
 Type-specific properties are described in their respective sections along with more specific examples.
-
-##### User-Defined Properties
-
-User-defined properties can be created for user-defined types using Property Functions.
 
 
 
 {% comment %}
 =====================================================================================================
-
-
 | Property          | boolean | integral | floating point | enum    | arrays    | struct  | class   |
 |:-----------------:|:-------:|:--------:|:--------------:|:-------:|:---------:|:-------:|:-------:|
 | mangleof          | yes     | yes      | yes            | yes (n) |   (sda)   |   yes   |   yes   |
