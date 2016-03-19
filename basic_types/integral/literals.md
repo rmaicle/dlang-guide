@@ -16,11 +16,11 @@ It cannot be applied to integer types that are less than 32-bits like `byte`, `u
 Integer literals can have _affixes_ and written with _digit separators_.
 
 | Affix        | Type   | Description |
-|--------------|--------|-------------|
+|:------------:|--------|-------------|
 | `0b` or `0B` | prefix | Binary integer literal |
 | `0x` or `0X` | prefix | Hexadecimal integer literal |
-| `u` or `U`   | suffix | Unsigned integer literal. Can be used with binary, decimal, hexadecimal literals and the `L` suffix. |
-| `L`          | suffix | Long integer literal. Can be used with binary, decimal, hexadecimal literals and the `u` and `U` suffix. |
+| `u` or `U`   | suffix | Unsigned integer literal.<br/>Can be used with binary, decimal, hexadecimal literals and the `L` suffix. |
+| `L`          | suffix | Long integer literal.<br/>Can be used with binary, decimal, hexadecimal literals and the `u` and `U` suffix. |
 
 ##### Prefix
 
