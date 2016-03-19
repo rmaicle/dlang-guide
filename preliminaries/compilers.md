@@ -9,7 +9,7 @@ tags: [dlang, dguide, draft]
 ---
 
 The D language have 3 official compilers available.
-For more in-depth information about the availability of these compilers, please visit http://wiki.dlang.org/Compilers.
+For more in-depth information about the availability of these compilers, please visit [http://wiki.dlang.org/Compilers](http://wiki.dlang.org/Compilers).
 
 Digital Mars D
 : The Digital Mars D compiler  is the reference compiler for the D programming language.
