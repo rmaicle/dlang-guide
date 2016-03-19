@@ -74,21 +74,21 @@ Syntax of `write` and `writef` Functions
 None.
 </div>
 
-##### Generic Display
+##### Generic Block
 
-It is sometimes necessary to display something in monospace format which are not necessarily source codes or program outputs.
-These texts are displayed in a block without highlighting or color coding but may be displayed with or without line numbers.
+It is sometimes necessary to display some texts in monospace format which are not necessarily source codes or program outputs.
+These texts are displayed in a block without highlighting or color coding and may be displayed with line numbers.
 
-Although not common, some texts displayed using the generic display format may need some explanation.
+Although not common, some texts displayed using the generic display format may need a short explanation or remark.
 This is sometimes necessary to achieve compactness and provide a more direct and focused information for the reader.
-To achieve this, the use of the hash (`#`) symbol to denote that the text following the symbol is meant to be a comment or remark.
+To achieve this, the use of the hash (`#`) symbol to mark the beginning of a comment or remark.
 
 {% highlight text linenos %}
 Here is an example of a generic display             
 The texts are intentionally not highlighted         # this is a comment
 {% endhighlight %}
 
-##### Source Code Display
+##### Source Code Block
 
 Source codes are displayed in a block as shown below with syntax highlighting and sometimes with line numbers.
 Syntax highlighting helps the reader to easily identify parts of the language while line numbers help when referring to specific source code lines.
@@ -102,14 +102,14 @@ writeln("Block comment");               /* block comment */
 writeln("Nesting block comment");       /+ nesting block comment +/
 {% endhighlight %}
 
-Also, to make source code displays a little shorter, some common source code lines are not included.
+Also, to make source code block texts a little shorter, some common source code lines are not included.
 This avoids syntactic noise that does not necessarily contribute to the actual code being discussed.
 The most common candidates for omission are:
 
 * import module statements
 * program entry point or the function `main()`
 
-Here is a small hello world example.
+Here is a small hello world program source code text example showing how to print the text 'Hello world!' to the standard output.
 
 {% highlight d linenos %}
 import std.stdio;                       // omitted
@@ -125,10 +125,9 @@ Compare the following code with the one above.
 writeln("Hello world!");
 {% endhighlight %}
 
-##### Source Code Text
+###### A Note on Source Code Texts
 
-The following are concerned with how source code is written or presented to the reader.
-The source codes presented here are meant to present information for teaching and learning.
+Source code texts are meant to present information for teaching and learning.
 The convention used here is not recommended as a convention to follow.
 Experienced programmers might therefore see violations and/or divergence from common and proper coding practices.
 
@@ -137,12 +136,13 @@ Experienced programmers might therefore see violations and/or divergence from co
    The source code comments are meant to be a summary or a quick note to the reader of what is happening on a line of code.
 2. Use of ellipses (`...`) in program source code means that _'other code goes here'_.
 
-##### Console and Output Display
+##### Console and Output Block
 
-Console and program outputs are also displayed in a block but texts are displayed in monochrome or without syntax highlighting with an exception to comments or remarks.
-Comments or remarks are not part of the actual console texts or program outputs but manually embedded so as to provide information on the actual console text or program output.
-Comments are colored for easy identification and begins with the hash (`#`) character followed by some comment text.
-Line numbers may or may not be present. If it is present its purpose is the same as source code displays.
+Console and program outputs are also displayed in a block but texts are displayed without syntax highlighting or color coding with an exception to comments or remarks.
+Comments or remarks are not part of the actual console texts or program outputs but manually embedded to provide additional information.
+Comments are colored for easy identification and begins with the hash (`#`) character followed by some text.
+Line numbers may or may not be present.
+If it is present, its purpose is to be able to refer to lines of text.
 
 Here is an example of a console or output display.
 
@@ -154,7 +154,7 @@ Block comment                           # block comment
 Nesting block comment                   # nesting block comment
 {% endhighlight %}
 
-##### Quotes and Quotations
+##### Quote and Quotation Block
 
 A quoted material is presented as follows:
 
