@@ -2,13 +2,15 @@
 layout: reference_dlang
 title: Guide to the D Programming Language
 chapter: Preliminaries
-section: Compilation
+section: Compilers
+subsection: Compiling
 excerpt: 
 group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-Here is the most basic syntax on how to compile a D source file using the reference compiler:
+This section discusses how to compile a D source code with the reference compiler (DMD) using the command line.
+Here is the most basic syntax to on how to compile a D source code file:
 
 <div markdown='1' class='syntax'>
 
@@ -20,7 +22,7 @@ where `source [...]` means one or more D source files.
 
 </div>
 
-The following _hello world_ source code is assumed to be in a D source file named `hello.d`.
+The following _hello world_ program is assumed to be in a D source code file named `hello.d`.
 
 {% highlight d linenos %}
 import std.stdio;
