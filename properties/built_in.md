@@ -2,13 +2,13 @@
 layout: reference_dlang
 title: Guide to the D Programming Language
 chapter: Type Properties
-section: Alphabetical List
+section: Built-In Properties
 excerpt: D Programming Languages
 group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-The table below lists all Type Properties in alphabetical order.
+The table below lists all built-in Type Properties in alphabetical order.
 {% comment %}
 The following legend is used in the Type Properties table below.
 {% endcomment %}
@@ -50,7 +50,7 @@ The following legend is used in the Type Properties table below.
 | get               |         |          |                |         |    (a)    |         |         |
 | idup              |         |          |                |         |   (sda)   |         |         |
 | im                |         |          | yes            |         |           |         |         |
-| init              | yes     | yes      | yes            | yes     |           |         |         |
+| init              | yes     | yes      | yes            | yes     |    (sd)   |         |         |
 | infinity          |         |          | yes            |         |           |         |         |
 | keys              |         |          |                |         |    (a)    |         |         |
 | length            |         |          |                |         |   (sda)   |         |         |
@@ -69,13 +69,11 @@ The following legend is used in the Type Properties table below.
 | re                |         |          | yes            |         |           |         |         |
 | rehash            |         |          |                |         |    (a)    |         |         |
 | reverse           |         |          |                |         |   (sda)   |         |         |
-| sizeof            |         | yes      | yes            |     (n) |           |   yes   |   yes   |
+| sizeof            |         | yes      | yes            |     (n) |   (sda)   |   yes   |   yes   |
 | sort              |         |          |                |         |   (sda)   |         |         |
 | stringof          | yes     | yes      | yes            | yes (n) |   (sda)   |   yes   |   yes   |
 | tupleof           |         |          |                |         |           |   yes   |   yes   |
 | values            |         |          |                |         |    (a)    |         |         |
-
-Type-specific properties are described in their respective sections along with more specific examples.
 
 
 

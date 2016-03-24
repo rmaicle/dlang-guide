@@ -10,40 +10,21 @@ tags: [dlang, dguide, draft]
 
 The `init` property is the default initializer for the corresponding type.
 The `init` property can only be used with boolean and numeric types, enumerations, and structures.
+It is an error to use the `init` Property with the `void` type.
+If the property is applied to a variable, then the value is the default initializer for the type of the variable.
 If the property is used with an expression, that expression is evaluated first and the resulting type is used.
-It is an error to use it with any other types.
 
-##### Types and Variables
+##### Basic Types and Variables
 
-The value of the `init` property is the default initializer for the type.
-If `init` is applied to a variable, then the value is the default initializer for the variable type.
+See the following sections for type specific `init` Property values:
 
-Here is an example of using the `init` property with boolean and some numeric types.
-Lines 1-5 assigns values to the variables just to show that the `init` property values are not affected by the value of a variable.
-
-{% highlight d linenos %}
-bool b = true;
-int  n = 1;
-double d = 2.0;
-
-writefln("%s %s", bool.init, b.init);       // false false
-writefln("%s %s", int.init, n.init);        // 0 0
-writefln("%s %s", double.init, d.init);     // nan nan
-{% endhighlight %}
-
-Notice that the value of `init` is the same whether it is applied to a type or to a variable.
+* [boolean `init` Property](/dlang-guide/basic_types/boolean/properties.html)
+* [integral `init` Property](/dlang-guide/basic_types/integral/properties.html)
+* [floating point `init` Property](/dlang-guide/basic_types/floating_point/properties/init.html)
 
 ##### Enumerations
 
-The value of `init` property is the first member of the enumeration.
-
-{% highlight d linenos %}
-enum State { On, Off }
-
-void main() {
-    writeln(State.init);                    // Left
-}
-{% endhighlight %}
+See [Enumeration `init` Property](/dlang-guide/enumerations/properties/init.html).
 
 ##### Struct
 

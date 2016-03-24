@@ -20,7 +20,8 @@ struct A {
 }
 
 void main() {
-    writeln(int.alignof);           // 4
+    writeln(A.a.alignof);           // 4
+	writeln(A.f.alignof);           // 4
     writeln(A.alignof);             // 4
 }
 {% endhighlight %}
