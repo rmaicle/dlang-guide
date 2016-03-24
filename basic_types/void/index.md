@@ -15,13 +15,13 @@ Variables cannot be of type `void` although the language allows arrays of type `
 (See [Array](/array.html) chapter).
 The `void` type is also used as function return type.
 A `void` function return type tells the compiler that a function does not return a value or that it returns a `void` type.
-The use of `void` in this scenario is necessary as function syntex declaration requires that a function specify the type of value it returns.
+The use of `void` in this scenario is necessary as function syntax declaration requires that a function specify its return type.
 
 {% highlight d %}
 void main() { }
 {% endhighlight %}
 
-A void type does not have a literal.
+A void type does not have any literals.
 
 ##### Sections
 {% include reference_dlang_subsection_links.html %}

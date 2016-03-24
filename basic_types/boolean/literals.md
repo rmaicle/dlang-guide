@@ -9,12 +9,19 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-Boolean literals use the built-in keywords `true` or `false`.
-The integer literal zero (0) and one (1) is implicitly converted to a boolean type; one (1) is equal to `true` and zero (0) is equal to `false`.
+There are only two possible boolean literals; the [reserved identifiers] `true` and `false`.
 
 {% highlight d linenos %}
-bool a = 0;
-bool b = 1;
+bool a = true;
+bool b = false;
+bool c = 1;
+bool d = 0;
 writeln(a);
 writeln(b);
+writeln(c);
+writeln(d);
 {% endhighlight %}
+
+See [Integral Literals].
+
+[reserved identifiers]: /dlang-guide/identifiers/reserved/index.html

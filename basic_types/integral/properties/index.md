@@ -9,16 +9,23 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-The following Type Propertes are defined for integral types:
+The following common [Type Properties] are defined for integral types:
 
-* __stringof__ - string representation
-* __mangleof__ - text representation.
-* __sizeof__ - size of the integral type in bytes.
-* __alignof__ - alignmen to the integral type in bytes.
-* __init__ - initial value the language assigns to the type.
-* __min__ - smallest value that the integral type can accommodate (the size of the type affects this value).
-* __max__ -  largest value the type can accommodate (the size of the type affects this value).
+* `alignof`     - alignment in bytes
+* `mangleof`    - text representation
+* `sizeof`      - size in bytes
+* `stringof`    - string representation
 
+As with other numeric types, the following Type Properties are defined for integral types:
+
+* `init`        - initial value
+* `max`         - largest value
+* `min`         - smallest value
+
+##### Sections
+{% include reference_dlang_subsubsection_links.html %}
+
+{% comment %}
 The following table shows the integral type property values.
 The `min` and `max` property values are formatted for convenience using the comma symbol for digit grouping.
 
@@ -46,5 +53,6 @@ writeln(typeof(128u).stringof);             // uint
 writeln(typeof(0b_1000_0000u).stringof);    // uint
 writeln(typeof(0x80u).stringof);            // uint
 {% endhighlight %}
+{% endcomment %}
 
-[Type Properties]: /dlang-guide/types/properties/index.html
+[Type Properties]: /dlang-guide/properties/index.html
