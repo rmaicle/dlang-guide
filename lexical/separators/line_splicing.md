@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
-section: Line Splicing
+chapter: Lexical
+section: Separators
+subsection: Line Splicing
 excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]
@@ -16,6 +17,6 @@ Hello \
 world!
 {% endhighlight %}
 
-Lines 1 and 2 will be joined to form `Hello world!`.
+Lines 1 and 2 will be joined to form the text `Hello world!`.
 
 D does not recognize backslash line splicing but the language does not limit the number of characters in a source code line.

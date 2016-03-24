@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
-section: Whitespace Characters
+chapter: Lexical
+section: Separators
+subsection: Whitespace Characters
 excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]

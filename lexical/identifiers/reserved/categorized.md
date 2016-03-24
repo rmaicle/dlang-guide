@@ -1,9 +1,10 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Identifiers and Tokens
-section: Reserved Identifiers
-subsection: Categorized
+chapter: Lexical
+section: Identifiers
+subsection: Reserved Identifiers
+subsubsection: Categorized
 excerpt: Language reserved words
 group: DLang
 tags: [dlang, dguide, draft]

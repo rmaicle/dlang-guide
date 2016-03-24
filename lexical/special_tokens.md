@@ -1,7 +1,7 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Identifiers and Tokens
+chapter: Lexical
 section: Special Tokens
 excerpt: Language special symbols
 group: DLang

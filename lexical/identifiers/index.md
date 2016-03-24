@@ -1,7 +1,8 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Identifiers and Tokens
+chapter: Lexical
+section: Identifiers
 excerpt:
 group: DLang
 tags: [dlang, dguide, draft]
@@ -57,7 +58,7 @@ $sign               # cannot start and use '$' character
 
 ##### Sections
 
-{% include reference_dlang_section_links.html %}
+{% include reference_dlang_subsection_links.html %}
 
 
 

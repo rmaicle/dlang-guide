@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Comments
-section: Nesting Comment
+chapter: Lexical
+section: Comments
+subsection: Nesting Comment
 excerpt: Language comment-styles
 group: DLang
 tags: [dlang, dguide, draft]

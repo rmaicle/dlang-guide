@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Identifiers and Tokens
-section: Reserved Identifiers
+chapter: Lexical
+section: Identifiers
+subsection: Reserved Identifiers
 excerpt: Language reserved words
 group: DLang
 tags: [dlang, dguide, draft]
@@ -15,7 +16,7 @@ These reserved identifiers are used as keywords in the 4th phase of compilation.
 
 
 ##### Sections
-{% include reference_dlang_subsection_links.html %}
+{% include reference_dlang_subsubsection_links.html %}
 
 {% comment %}
 http://dlang.org/traits.html.

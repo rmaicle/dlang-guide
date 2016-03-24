@@ -1,7 +1,7 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
+chapter: Lexical
 section: Source File
 excerpt: D Programming Language
 group: DLang
@@ -39,6 +39,9 @@ The compiler reads the BOM and converts the contents of the file to Unicode char
 
 The first source text character of an ASCII text file is the character at offset 0x00 or at the first byte of the file.
 The first source text character of a Unicode text file is the character after the _Byte Order Mark_ (BOM).
+
+##### Sections
+{% include reference_dlang_subsection_links.html %}
 
 [^charencode]: Character encodings are a way to unify different character sets of the world's writing systems to facilitate the interchange of digital text.
 [^endianness]: Machine endianness refers to the way a computer processor stores data. Technically, it is the way a computer processor stores the most significant _bits_. If the most significant bits are stored first then this is called the _Big-Endian_ (BE) and the other way would be _Little-Endian_ (LE). For more information go to [https://en.wikipedia.org/wiki/Endianness](https://en.wikipedia.org/wiki/Endianness).

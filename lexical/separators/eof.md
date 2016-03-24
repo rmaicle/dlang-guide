@@ -1,7 +1,8 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
+chapter: Lexical
+section: Separators
 section: End-of-File Characters
 excerpt: D Programming Language
 group: DLang

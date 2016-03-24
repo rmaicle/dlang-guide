@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
-section: Script Line
+chapter: Lexical
+section: Source File
+subsection: Script Line
 excerpt: Script execution
 group: DLang
 tags: [dlang, dguide, draft]

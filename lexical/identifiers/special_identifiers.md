@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Identifiers and Tokens
-section: Special Identifiers
+chapter: Lexical
+section: Identifiers
+subsection: Special Identifiers
 excerpt: 
 group: DLang
 tags: [dlang, dguide, draft]

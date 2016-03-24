@@ -1,8 +1,9 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
-section: End-of-Line Characters
+chapter: Lexical
+section: Separators
+subsection: End-of-Line Characters
 excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]

@@ -1,7 +1,8 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Comments
+chapter: Lexical
+section: Comments
 excerpt: Language comment-styles
 group: DLang
 tags: [dlang, dguide, draft]
@@ -20,4 +21,4 @@ The following is the syntax summary of comment styles:
 | Nesting Block | `/+`  | `+/`  | 
 
 ##### Sections
-{% include reference_dlang_section_links.html %}
+{% include reference_dlang_subsection_links.html %}
