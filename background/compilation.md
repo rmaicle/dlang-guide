@@ -1,20 +1,16 @@
 ---
 layout: reference_dlang
 title: Guide to the D Programming Language
-chapter: Basics
+chapter: Background
 section: Compilation
 excerpt: D Programming Language
 group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-{% comment %}
-This chapter introduces the reader to the basics of compilations processes and the language lexical tokens.
-{% endcomment %}
-
-Compilation [^compiler] is the process converting or translating a program text file [^sourcecode] into a binary file which is fed to a linker. [^linker]
+Compilation [^compiler] is the process converting or translating a program text file [^sourcecode] to a binary file which is fed to a linker [^linker] to produce an executable file, a library file or an object file.
 Program compilation is a multi-step process or sometimes called translaton phases.
-These translation phases are big topics on their own and are subjects in active research.
+These translation phases are big topics on their own and are subjects in active research and development.
 
 The following provides very brief and simplified explanation of each translation phase.
 
@@ -32,22 +28,18 @@ If something in the input does not conform to the language grammar then a 'synta
 Otherwise, the syntax-validated tokens are fed to the semantic analyzer.
 
 Semantic Analysis
-: Semantic analysis analyses the tokens from the syntax tree and determine their meaning.
+: Semantic analysis is the process of determining the meaning of the program by examining the syntax tree from the previous phase.
 At this point, the program is basically executable.
 In fact, this is how interpreters run programs.
-The reference compiler has an option to do exactly that.
-The next phase is an optional step which requires telling the compiler that you explicitly want the next step to be performed.
 
 Optimization
 : Optimization is an optional process.
-The compiler must be told explicitly that this step must be performed.
-This is necessary because this process is a resource intensive operation.
+The compiler must be told explicitly that this step must be performed because this is a resource intensive operation.
 The compiler will analyze the entire program and implement the fastest and most efficient way that the program can run.
 The program is rewritten very efficiently without making any unintentional side effect.
 
 Code Generation
-: Code generation is where the optimized or unoptimized code is translated into machine instructions for a target machine architecture [^machine architecture].
-The result can then be fed into a linker.
+: Code generation is where the optimized or unoptimized code is translated into machine instructions for the target machine architecture [^machine architecture].
 
 ##### Sections
 
