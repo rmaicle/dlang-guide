@@ -25,3 +25,7 @@ void main() {
     writeln(A.alignof);             // 4
 }
 {% endhighlight %}
+
+{% comment %}
+https://software.intel.com/en-us/articles/coding-for-performance-data-alignment-and-structures
+{% endcomment %}

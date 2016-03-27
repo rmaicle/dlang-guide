@@ -7,14 +7,12 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-The language have two categories of Type Properties.
+Every type has an associated built-in information regarding itself.
+These built-in type information are exposed or made available by the language to the progammer as _type properties_.
+Type properties are usually queried to return the corresponding information but there are a few that perform operations.
+Type properties are not reserved identifiers and user-defined properties may be created for user-defined types as discussed in the [User-Defined Properties section](/dlang-guide/properties/user_defined.html).
 
-* Read-only Properties that are used to query information about a type.
-* Function-like Properties that perform a pre-defined operation on a type.
-
-Properties are not reserved identifiers and user-defined properties may be defined.
-
-The language defines the following syntax for using Type Properties:
+The language defines the following syntax for using type properties:
 
 <div markdown='1' class='syntax'>
 
@@ -27,11 +25,10 @@ Type Property Syntax
   To evaluate source as an expression, it must be enclosed within parenthesis.
 
 `property`
-: built-in Type Properties or a user-defined type property.
-  See list of all [built-in Type Properties](/dlang-guide/properties/alphabetical.html).
+: built-in or user-defined type property.
+  See list of all [built-in type properties](/dlang-guide/properties/alphabetical.html).
 
 </div>
-
 
 Type-specific properties are described in their respective sections along with more specific examples.
 
