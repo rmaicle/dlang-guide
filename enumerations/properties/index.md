@@ -8,7 +8,7 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-The following Propertes are defined for enumeration types:
+The following Properties are defined for enumeration types:
 
 * __alignof__    -
 * __init__        - initial value                                                                               

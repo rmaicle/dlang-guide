@@ -7,34 +7,33 @@ group: DLang
 tags: [dlang, dguide, draft]
 ---
 
-Base Types
-> The base type of an enum is the type it is based on:
-> enum E : T { ... } // T is the base type of E
+Enumerations are constants that are primarily designed to be grouped together.
+The language allows the creation of enumerations that are also anonymous, which have no grouping name.
+Enumerations can have an arbitrary number of members.
+Enumerations that have only one member can be created as manifest constants.
 
-> If a enum has as a base type one of the types in the left column, it is converted to the type in the right column. (&#167;6)
+##### Base Type
 
-##### Implicit Conversions
+A _base type_ is the collective type of all members of an enumeration and an enumeration can only have one base type.
+If no base type is specified, the base type is deduced from the value of first member.
+If no base type is specified and the first member have no initializer then the default base type is assumed which is an `int` type.
+A different base type may be explicitly specified.
 
-Implicit conversions are used to automatically convert types as required.
-A enum can be implicitly converted to its base type, but going the other way requires an explicit conversion.
-For example:
+##### Initialization
 
-~~~
-int i;
-enum Foo { E }
-Foo f;
-i = f;          // OK
-f = i;          // error
+Members may or may not be initialized depending on its base type.
 
-f = cast(Foo)i; // OK
-f = 0;          // error
-f = Foo.E;      // OK
-~~~
+Enumerations with a numeric base type is not required to have its members explicitly initialized since they are automatically initialized by default.
+The members of such an enumeration will be initialized starting with the base type `init` property which is zero (`0`).
+The members of such an enumeration may be explicitly initialized with different values.
+If a member is not initialized explicitly, it's value will be the next value of the previous member.
 
-If one or both of the operand types is an enum after undergoing the above conversions, the
-result type is:
+Enumerations that have a non-numeric base type must explicitly initialize each member.
 
-1. If the operands are the same type, the result will be the that type.
-2. If one operand is an enum and the other is the base type of that enum, the result is the base type.
-3. If the two operands are different enums, the result is the closest base type common to both.
-   A base type being closer means there is a shorter sequence of conversions to base type to get there from the original type.
+It is an error to initialize members of an enumeration with different types.
+
+A manifest constant is always default initialized if no initializer is specified.
+The value of the `init` property of the type is used as the default initializer.
+
+##### Sections
+{% include reference_dlang_section_links.html %}
